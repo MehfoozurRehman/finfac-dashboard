@@ -1,11 +1,10 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Outlet } from "react-router-dom";
 import "./App.scss";
 import Loan from "./screens/Loan";
 import Category from "./screens/Category";
 import CategoryChild from "./screens/CategoryChild";
 import Customers from "./screens/Customers";
-import Dashboard from "./screens/Dashboard";
 import DashboardPanel from "./screens/DashboardPanel";
 import InvestMoney from "./screens/InvestMoney";
 import Login from "./screens/Login";
@@ -13,6 +12,16 @@ import NeedMoney from "./screens/NeedMoney";
 import Protection from "./screens/Protection";
 import SubCategory from "./screens/SubCategory";
 import UserSettings from "./screens/UserSettings";
+import Sidebar from "./components/Sidebar";
+
+function Dashboard() {
+  return (
+    <div className="container">
+      <Sidebar />
+      <Outlet />
+    </div>
+  );
+}
 
 export default function App() {
   return (
