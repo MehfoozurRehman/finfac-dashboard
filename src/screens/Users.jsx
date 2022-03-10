@@ -1,6 +1,7 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
+import TableHeaderEntry from "../components/TableHeaderEntry";
+import UsersTableEntry from "../components/UsersTableEntry";
 
 export default function Users() {
   return (
@@ -24,7 +25,33 @@ export default function Users() {
           </form>
         </div>
       </div>
-      <div className="main__content"></div>
+      <div className="main__content">
+        <div className="main__content__table">
+          <div className="main__content__table__header">
+            <TableHeaderEntry title="Action" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Email" />
+            <TableHeaderEntry title="Number" />
+          </div>
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+          <UsersTableEntry />
+        </div>
+      </div>
     </div>
   );
 }

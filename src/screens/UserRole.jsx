@@ -1,6 +1,7 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
+import TableHeaderEntry from "../components/TableHeaderEntry";
+import UserRoleTableEntry from "../components/UserRoleTableEntry";
 
 export default function UserRole() {
   return (
@@ -28,7 +29,38 @@ export default function UserRole() {
           </form>
         </div>
       </div>
-      <div className="main__content"></div>
+      <div className="main__content">
+        <div className="main__content__table">
+          <div className="main__content__table__header">
+            <TableHeaderEntry title="Action" />
+            <TableHeaderEntry title="Role" />
+          </div>
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+          <UserRoleTableEntry />
+        </div>
+      </div>
     </div>
   );
 }
