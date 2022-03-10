@@ -6,10 +6,7 @@ import Category from "./screens/Category";
 import CategoryChild from "./screens/CategoryChild";
 import Customers from "./screens/Customers";
 import DashboardPanel from "./screens/DashboardPanel";
-import InvestMoney from "./screens/InvestMoney";
 import Login from "./screens/Login";
-import NeedMoney from "./screens/NeedMoney";
-import Protection from "./screens/Protection";
 import SubCategory from "./screens/SubCategory";
 import Sidebar from "./components/Sidebar";
 import Users from "./screens/Users";
@@ -35,12 +32,42 @@ export default function App() {
         <Route path="category" element={<Category />} />
         <Route path="category/sub_category" element={<SubCategory />} />
         <Route path="category/sub_category/child" element={<CategoryChild />} />
-        <Route path="need_money" element={<NeedMoney />} />
-        <Route path="need_money/auto_loan" element={<Loan />} />
-        <Route path="need_money/car_loans" element={<Loan />} />
-        <Route path="need_money/credit_card" element={<Loan />} />
-        <Route path="invest_money" element={<InvestMoney />} />
-        <Route path="protection" element={<Protection />} />
+        <Route
+          path="invest_money/mutual_funds"
+          element={<Loan heading="Mutual Funds" />}
+        />
+        <Route
+          path="invest_money/national_savings"
+          element={<Loan heading="National Savings" />}
+        />
+        <Route
+          path="need_money/credit_card"
+          element={<Loan heading="Credit Card" />}
+        />
+        <Route
+          path="need_money/auto_loan"
+          element={<Loan heading="Auto Loan" />}
+        />
+        <Route
+          path="need_money/car_loans"
+          element={<Loan heading="Car Loans" />}
+        />
+        <Route
+          path="protection/health_insurance"
+          element={<Loan heading="Health Insurance" />}
+        />
+        <Route
+          path="protection/life_insurance"
+          element={<Loan heading="Life Insurance" />}
+        />
+        <Route
+          path="protection/travel_insurance"
+          element={<Loan heading="Travel Insurance" />}
+        />
+        <Route
+          path="protection/car_insurance"
+          element={<Loan heading="Car Insurance" />}
+        />
         <Route path="customers" element={<Customers />} />
       </Route>
     </Routes>
