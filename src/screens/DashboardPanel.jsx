@@ -208,6 +208,9 @@ function TrafficSource({}) {
   };
   return (
     <div className="dashboard__panel__content__traffic__source">
+      <div className="dashboard__panel__content__traffic__source__heading">
+        Traffic Source
+      </div>
       <Doughnut
         data={data}
         style={{

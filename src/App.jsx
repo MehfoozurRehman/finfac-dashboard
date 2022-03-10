@@ -11,8 +11,9 @@ import Login from "./screens/Login";
 import NeedMoney from "./screens/NeedMoney";
 import Protection from "./screens/Protection";
 import SubCategory from "./screens/SubCategory";
-import UserSettings from "./screens/UserSettings";
 import Sidebar from "./components/Sidebar";
+import Users from "./screens/Users";
+import UserRole from "./screens/UserRole";
 
 function Dashboard() {
   return (
@@ -29,7 +30,8 @@ export default function App() {
       <Route path="/" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />}>
         <Route path="" element={<DashboardPanel />} />
-        <Route path="user_settings" element={<UserSettings />} />
+        <Route path="users" element={<Users />} />
+        <Route path="user_role" element={<UserRole />} />
         <Route path="category" element={<Category />} />
         <Route path="category/sub_category" element={<SubCategory />} />
         <Route path="category/sub_category/child" element={<CategoryChild />} />
