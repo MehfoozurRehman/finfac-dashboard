@@ -1,6 +1,8 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link } from "react-router-dom";
+import SubCategoryChildTableEntry from "../components/SubCategoryChildTableEntry";
+import TableHeaderEntry from "../components/TableHeaderEntry";
 
 export default function CategoryChild() {
   return (
@@ -68,7 +70,39 @@ export default function CategoryChild() {
           </form>
         </div>
       </div>
-      <div className="main__content"></div>
+      <div className="main__content">
+        <div className="main__content__table">
+          <div className="main__content__table__header">
+            <TableHeaderEntry title="Action" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Main Category" />
+            <TableHeaderEntry title="Parent Category" />
+          </div>
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link } from "react-router-dom";
+import CategoryTableEntry from "../components/CategoryTableEntry";
+import SubCategoryTableEntry from "../components/SubCategoryTableEntry";
+import TableHeaderEntry from "../components/TableHeaderEntry";
 
 export default function SubCategory() {
   return (
@@ -68,7 +71,38 @@ export default function SubCategory() {
           </form>
         </div>
       </div>
-      <div className="main__content"></div>
+      <div className="main__content">
+        <div className="main__content__table">
+          <div className="main__content__table__header">
+            <TableHeaderEntry title="Action" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Parent Category" />
+          </div>
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+          <SubCategoryTableEntry />
+        </div>
+      </div>
     </div>
   );
 }
