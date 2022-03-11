@@ -23,7 +23,10 @@ export default function CategoryChild({ onAdd, onEdit }) {
           </div>
         </div>
         <div className="main__header__bottom">
-          <Link to="/" className="main__header__bottom__button">
+          <Link
+            to="/dashboard/manage_entries"
+            className="main__header__bottom__button"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

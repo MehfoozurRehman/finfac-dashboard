@@ -20,6 +20,8 @@ import UserRolePopup from "./components/UserRolePopup";
 import CategoryPopup from "./components/CategoryPopup";
 import SubCategoryPopup from "./components/SubCategoryPopup";
 import SubCategoryChildPopup from "./components/SubCategoryChildPopup";
+import LoanForm from "./screens/LoanForm";
+import ManageEntries from "./screens/ManageEntries";
 
 function Dashboard() {
   return (
@@ -175,6 +177,15 @@ export default function App() {
           <Route
             path="protection/car_insurance"
             element={<Loan heading="Car Insurance" />}
+          />
+          <Route path="loan_form/edit" element={<LoanForm heading="Edit" />} />
+          <Route
+            path="loan_form/add"
+            element={<LoanForm heading="Add New" />}
+          />
+          <Route
+            path="manage_entries"
+            element={<ManageEntries heading="Manage Entries" />}
           />
           <Route path="customers" element={<Customers />} />
           <Route path="customers/applied" element={<CustomersApplied />} />

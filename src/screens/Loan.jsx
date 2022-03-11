@@ -1,10 +1,11 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 export default function Loan({ heading }) {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
@@ -14,13 +15,21 @@ export default function Loan({ heading }) {
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
             </button> */}
-            <button className="main__header__top__buttons__button">
+            <button
+              className="main__header__top__buttons__button"
+              onClick={() => {
+                navigate("/dashboard/loan_form/add");
+              }}
+            >
               Add New
             </button>
           </div>
         </div>
         <div className="main__header__bottom">
-          <Link to="/" className="main__header__bottom__button">
+          <Link
+            to="/dashboard/manage_entries"
+            className="main__header__bottom__button"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
