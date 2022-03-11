@@ -1,11 +1,14 @@
 import React from "react";
 import { Edit, Trash } from "react-feather";
 
-export default function TestimonialsTableEntry() {
+export default function TestimonialsTableEntry({ onEdit }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
-        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__primary"
+          onClick={onEdit}
+        >
           <Edit size={20} color="currentColor" strokeWidth={1} />
         </button>
         <button className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary">
@@ -23,15 +26,6 @@ export default function TestimonialsTableEntry() {
 
       <div className="main__content__table__list__entry">Product Manager</div>
       <div className="main__content__table__list__entry">4.0</div>
-      <div className="main__content__table__list__entry">
-        View Message
-        <div className="main__content__table__list__entry__message">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-          eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Esse, eligendi! Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Esse, eligendi!
-        </div>
-      </div>
     </div>
   );
 }

@@ -24,6 +24,7 @@ import LoanForm from "./screens/LoanForm";
 import ManageEntries from "./screens/ManageEntries";
 import PartnersPopup from "./components/PartnersPopup";
 import BlogsPopup from "./components/BlogsPopup";
+import TestimonialsForm from "./screens/TestimonialsForm";
 
 function Dashboard() {
   return (
@@ -49,6 +50,7 @@ export default function App() {
   const [isAddPartnersPopup, setIsAddPartnersPopup] = useState(false);
   const [isEditBlogsPopup, setIsEditBlogsPopup] = useState(false);
   const [isAddBlogsPopup, setIsAddBlogsPopup] = useState(false);
+
   return (
     <>
       {isEditUserRolePopup ? (
@@ -129,6 +131,7 @@ export default function App() {
           onSubmit={setIsAddBlogsPopup}
         />
       ) : null}
+
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}>
@@ -229,6 +232,14 @@ export default function App() {
             }
           />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route
+            path="testimonials/add"
+            element={<TestimonialsForm heading="Add" />}
+          />
+          <Route
+            path="testimonials/edit"
+            element={<TestimonialsForm heading="Edit" />}
+          />
           <Route
             path="partners"
             element={

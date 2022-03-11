@@ -1,15 +1,26 @@
 import React from "react";
-import { Search } from "react-feather";
-import { Link } from "react-router-dom";
+import { ArrowLeft, Search } from "react-feather";
+import { Link, useNavigate } from "react-router-dom";
 import CustomersAppliedTableEntry from "../components/CustomersAppliedTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
 export default function CustomersApplied() {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
-          <div className="main__header__top__heading">Customers Applied</div>
+          <div className="main__header__top__heading">
+            <button
+              className="main__header__top__heading__button"
+              onClick={() => {
+                navigate("/dashboard/customers");
+              }}
+            >
+              <ArrowLeft size={20} color="currentColor" />
+            </button>
+            Customers Applied
+          </div>
           <div className="main__header__top__buttons"></div>
         </div>
         <div className="main__header__bottom">
