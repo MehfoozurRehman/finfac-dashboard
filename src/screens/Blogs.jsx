@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 import BlogsTableEntry from "../components/BlogsTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Blogs() {
+export default function Blogs({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
           <div className="main__header__top__heading">Blogs</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            <button
+              className="main__header__top__buttons__button"
+              onClick={onAdd}
+            >
               Add New
             </button>
           </div>
@@ -40,25 +43,33 @@ export default function Blogs() {
             <TableHeaderEntry title="Date Created" />
             <TableHeaderEntry title="Catagory" />
           </div>
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
-          <BlogsTableEntry />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>

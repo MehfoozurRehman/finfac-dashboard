@@ -23,6 +23,7 @@ import SubCategoryChildPopup from "./components/SubCategoryChildPopup";
 import LoanForm from "./screens/LoanForm";
 import ManageEntries from "./screens/ManageEntries";
 import PartnersPopup from "./components/PartnersPopup";
+import BlogsPopup from "./components/BlogsPopup";
 
 function Dashboard() {
   return (
@@ -46,6 +47,8 @@ export default function App() {
     useState(false);
   const [isEditPartnersPopup, setIsEditPartnersPopup] = useState(false);
   const [isAddPartnersPopup, setIsAddPartnersPopup] = useState(false);
+  const [isEditBlogsPopup, setIsEditBlogsPopup] = useState(false);
+  const [isAddBlogsPopup, setIsAddBlogsPopup] = useState(false);
   return (
     <>
       {isEditUserRolePopup ? (
@@ -111,6 +114,19 @@ export default function App() {
         <PartnersPopup
           onClose={setIsAddPartnersPopup}
           onSubmit={setIsAddPartnersPopup}
+        />
+      ) : null}
+      {isEditBlogsPopup ? (
+        <BlogsPopup
+          isEdit
+          onClose={setIsEditBlogsPopup}
+          onSubmit={setIsEditBlogsPopup}
+        />
+      ) : null}
+      {isAddBlogsPopup ? (
+        <BlogsPopup
+          onClose={setIsAddBlogsPopup}
+          onSubmit={setIsAddBlogsPopup}
         />
       ) : null}
       <Routes>
@@ -206,7 +222,12 @@ export default function App() {
           <Route path="customers" element={<Customers />} />
           <Route path="customers/applied" element={<CustomersApplied />} />
           <Route path="contact" element={<Contacts />} />
-          <Route path="blogs" element={<Blogs />} />
+          <Route
+            path="blogs"
+            element={
+              <Blogs onAdd={setIsAddBlogsPopup} onEdit={setIsEditBlogsPopup} />
+            }
+          />
           <Route path="testimonials" element={<Testimonials />} />
           <Route
             path="partners"
