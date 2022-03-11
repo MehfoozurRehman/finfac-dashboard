@@ -634,6 +634,7 @@ body {
   padding: 0.3em 1em;
   padding-bottom: 1em;
   padding-top: 1.5em;
+  z-index: 10;
 }
 .main__content__table__header__entry {
   flex: 1;
@@ -671,6 +672,24 @@ body {
   min-width: 200px;
   word-wrap: break-word;
   font-size: 12px;
+  display: flex;
+  position: relative;
+}
+
+.main__content__table__list__entry__message {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  width: 300px;
+  font-size: 12px;
+  z-index: 1;
+}
+.main__content__table__list__entry:hover
+  .main__content__table__list__entry__message {
   display: flex;
 }
 .main__content__table__list__entry:first-child {
