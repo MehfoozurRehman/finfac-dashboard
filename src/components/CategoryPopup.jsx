@@ -1,21 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Plus, X } from "react-feather";
-
-function UploadImage() {
-  return (
-    <div className="popup__form__upload">
-      <input type="file" />
-      <div className="popup__form__upload__content">
-        <Plus size={30} color="currentcolor" />
-        <img
-          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          alt=""
-          className="popup__form__upload__content__img"
-        />
-      </div>
-    </div>
-  );
-}
+import UploadImage from "./UploadImage";
 
 export default function CategoryPopup({ onClose, onSubmit, isEdit }) {
   return (
@@ -42,8 +27,8 @@ export default function CategoryPopup({ onClose, onSubmit, isEdit }) {
           </div>
         </div>
         <div className="popup__form__row">
-          <UploadImage />
-          <UploadImage />
+          <UploadImage label="Active Image" />
+          <UploadImage label="InActive Image" />
         </div>
         <button onClick={() => onSubmit(false)} className="popup__form__button">
           {isEdit ? "Edit" : "Add"}
