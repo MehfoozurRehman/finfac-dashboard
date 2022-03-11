@@ -10,8 +10,9 @@ import {
   PointElement,
   LinearScale,
   CategoryScale,
+  BarElement,
 } from "chart.js";
-import { Doughnut, Line, Pie } from "react-chartjs-2";
+import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
 import { useNavigate } from "react-router-dom";
 
 export default function DashboardPanel() {
@@ -186,7 +187,7 @@ export default function DashboardPanel() {
           </div>
         </div>
         <div className="dashboard__panel__content__row">
-          <div className="dashboard__panel__content__total_entries"></div>
+          <TotalEntries />
         </div>
       </div>
     </div>
@@ -217,6 +218,35 @@ function TrafficSource({}) {
           width: 100,
         }}
       />
+      <div className="dashboard__panel__content__traffic__source__content">
+        <div className="dashboard__panel__content__traffic__source__content__entry">
+          <div
+            className="dashboard__panel__content__traffic__source__content__entry__icon"
+            style={{ background: "#ed263d" }}
+          ></div>
+          <div className="dashboard__panel__content__traffic__source__content__entry__data">
+            Search Engine
+          </div>
+        </div>
+        <div className="dashboard__panel__content__traffic__source__content__entry">
+          <div
+            className="dashboard__panel__content__traffic__source__content__entry__icon"
+            style={{ background: "#1A1A1A" }}
+          ></div>
+          <div className="dashboard__panel__content__traffic__source__content__entry__data">
+            Direct Click
+          </div>
+        </div>
+        <div className="dashboard__panel__content__traffic__source__content__entry">
+          <div
+            className="dashboard__panel__content__traffic__source__content__entry__icon"
+            style={{ background: "#CDD5E1" }}
+          ></div>
+          <div className="dashboard__panel__content__traffic__source__content__entry__data">
+            Bookmark Click
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -267,7 +297,6 @@ function Posts({}) {
       {
         label: "Site Page",
         data: [40, 40, 20, 40, 40, 20, 40, 40, 20, 40, 40, 20],
-
         borderColor: "#1A1A1A",
         backgroundColor: "#1A1A1A",
       },
@@ -324,8 +353,77 @@ function Pages({}) {
           </div>
         </div>
       </div>
-
       <Pie data={data} style={{ maxWidth: 200, maxHeight: 200 }} />
+    </div>
+  );
+}
+function TotalEntries() {
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+  );
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        grid: {
+          display: false,
+        },
+      },
+    },
+  };
+
+  const labels = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+  ];
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Dataset 1",
+        data: [10, 30, 20, 10, 30, 40, 10, 100, 50, 60, 70, 80, 70, 80],
+        backgroundColor: "#ED263D",
+      },
+    ],
+  };
+  return (
+    <div className="dashboard__panel__content__total_entries">
+      <div
+        className="dashboard__panel__content__post__created__header__heading"
+        style={{
+          marginBottom: "1em",
+        }}
+      >
+        Total Entries
+      </div>
+      <Bar options={options} data={data} style={{ maxHeight: 300 }} />
     </div>
   );
 }
