@@ -3,14 +3,19 @@ import { Search } from "react-feather";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 import UserRoleTableEntry from "../components/UserRoleTableEntry";
 
-export default function UserRole() {
+export default function UserRole({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
           <div className="main__header__top__heading">User Role</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            <button
+              className="main__header__top__buttons__button"
+              onClick={() => {
+                onAdd(true);
+              }}
+            >
               Add New
             </button>
           </div>
@@ -35,30 +40,30 @@ export default function UserRole() {
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Role" />
           </div>
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
-          <UserRoleTableEntry />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
+          <UserRoleTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>

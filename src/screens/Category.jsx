@@ -4,17 +4,22 @@ import { Link } from "react-router-dom";
 import CategoryTableEntry from "../components/CategoryTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Category() {
+export default function Category({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
           <div className="main__header__top__heading">Category</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            {/* <button className="main__header__top__buttons__button">
               Bulk Add
-            </button>
-            <button className="main__header__top__buttons__button">
+            </button> */}
+            <button
+              className="main__header__top__buttons__button"
+              onClick={() => {
+                onAdd(true);
+              }}
+            >
               Add New
             </button>
           </div>
@@ -78,25 +83,29 @@ export default function Category() {
             <TableHeaderEntry title="Inactive Image" />
             <TableHeaderEntry title="Name" />
           </div>
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
-          <CategoryTableEntry />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
+          <CategoryTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>
