@@ -11,9 +11,9 @@ export default function CategoryChild() {
         <div className="main__header__top">
           <div className="main__header__top__heading">Child</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            {/* <button className="main__header__top__buttons__button">
               Bulk Add
-            </button>
+            </button> */}
             <button className="main__header__top__buttons__button">
               Add New
             </button>

@@ -1,21 +1,23 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link } from "react-router-dom";
-import CategoryTableEntry from "../components/CategoryTableEntry";
 import SubCategoryTableEntry from "../components/SubCategoryTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function SubCategory() {
+export default function SubCategory({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
           <div className="main__header__top__heading">Sub Category</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            {/* <button className="main__header__top__buttons__button">
               Bulk Add
-            </button>
-            <button className="main__header__top__buttons__button">
+            </button> */}
+            <button
+              className="main__header__top__buttons__button"
+              onClick={onAdd}
+            >
               Add New
             </button>
           </div>
@@ -78,28 +80,34 @@ export default function SubCategory() {
             <TableHeaderEntry title="Name" />
             <TableHeaderEntry title="Parent Category" />
           </div>
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
-          <SubCategoryTableEntry />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
+          <SubCategoryTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>

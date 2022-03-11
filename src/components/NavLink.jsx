@@ -21,10 +21,8 @@ export default function NavLink({ title, to, svg, list }) {
           name="nav__link__entry__input"
           onClick={() => {
             navigate(to);
-            selected === title
-              ? setSelected(false)
-              : setSelected(title) &&
-                window.localStorage.setItem("selectedMain", title);
+            selected === title ? setSelected(false) : setSelected(title);
+            window.localStorage.setItem("selectedMain", title);
           }}
         />
         <div className="nav__link__entry__content">

@@ -11,9 +11,9 @@ export default function Loan({ heading }) {
         <div className="main__header__top">
           <div className="main__header__top__heading">{heading}</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            {/* <button className="main__header__top__buttons__button">
               Bulk Add
-            </button>
+            </button> */}
             <button className="main__header__top__buttons__button">
               Add New
             </button>
@@ -74,9 +74,13 @@ export default function Loan({ heading }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Active Image" />
-            <TableHeaderEntry title="Inactive Image" />
+            <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Featured" />
+            <TableHeaderEntry title="Type" />
+            <TableHeaderEntry title="Rate" />
+            <TableHeaderEntry title="Spread" />
           </div>
           <LoanTableEntry />
           <LoanTableEntry />

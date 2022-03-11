@@ -1,6 +1,5 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
 import PartnersTableEntry from "../components/PartnersTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
