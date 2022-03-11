@@ -46,9 +46,9 @@ export default function CategoryChild({ onAdd, onEdit }) {
                   transform="translate(-1.455 -1.455)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
                 <path
                   id="Path_21947"
@@ -57,9 +57,9 @@ export default function CategoryChild({ onAdd, onEdit }) {
                   transform="translate(0 0)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
               </g>
             </svg>

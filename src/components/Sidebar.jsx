@@ -27,8 +27,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <path
@@ -59,8 +59,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -99,8 +99,8 @@ export default function Sidebar({}) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#fff" />
-                      <stop offset="1" stop-color="#d2d2d2" />
+                      <stop offset="0" stopColor="#fff" />
+                      <stop offset="1" stopColor="#d2d2d2" />
                     </linearGradient>
                   </defs>
                   <g id="Group_1" data-name="Group 1" transform="translate(0)">
@@ -226,8 +226,8 @@ export default function Sidebar({}) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#fff" />
-                      <stop offset="1" stop-color="#d2d2d2" />
+                      <stop offset="0" stopColor="#fff" />
+                      <stop offset="1" stopColor="#d2d2d2" />
                     </linearGradient>
                   </defs>
                   <g id="Group_1" data-name="Group 1" transform="translate(0)">
@@ -437,8 +437,8 @@ export default function Sidebar({}) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#fff" />
-                      <stop offset="1" stop-color="#d2d2d2" />
+                      <stop offset="0" stopColor="#fff" />
+                      <stop offset="1" stopColor="#d2d2d2" />
                     </linearGradient>
                   </defs>
                   <g
@@ -452,8 +452,8 @@ export default function Sidebar({}) {
                       d="M13.378,17.744h-.011c-1.358-.009-2.7-.009-4.061-.009H7.38c-.891,0-2.233,0-3.6-.008A3.847,3.847,0,0,1,1.259,16.7,3.5,3.5,0,0,1,.071,14.288l-.013-.35a22.28,22.28,0,0,1,.468-6.91A18.732,18.732,0,0,1,3.563.663,1.48,1.48,0,0,1,4.871,0H4.9c1.519.015,3.1.022,4.828.022,1.516,0,3.146-.005,5.13-.017h.013a.825.825,0,0,1,.86.49c.164.327.346.653.54,1,.086.153.179.319.274.492H15.152c-1,0-1.336.336-1.337,1.319,0,2.52,0,5.067,0,7.459v.143q0,1.793,0,3.585c0,.263,0,.526,0,.789,0,.647-.006,1.315.01,1.976a.531.531,0,0,1-.085.391A.486.486,0,0,1,13.378,17.744ZM7.645,12.808c.123,0,.2.023.238.074a.245.245,0,0,1,.023.213.662.662,0,0,0,.05.564.567.567,0,0,0,.47.156c.074,0,.153,0,.259-.013s.232-.015.366-.015c.15,0,.309.006.437.011l.058,0H9.6a.319.319,0,0,0,.248-.074.244.244,0,0,0,.023-.211.651.651,0,0,1,.046-.552.727.727,0,0,1,.573-.162l.158,0H10.7c.77,0,1.133-.384,1.14-1.21.007-.731.007-1.513,0-2.458-.006-.866-.373-1.238-1.227-1.243-.386,0-.8-.007-1.207-.007s-.79,0-1.129.012H8.25c-.272,0-.33-.1-.356-.372A.674.674,0,0,1,7.99,7a.459.459,0,0,1,.36-.119,1.5,1.5,0,0,1,.173.011,4.713,4.713,0,0,0,.523.025c.143,0,.293,0,.414-.007s.271-.007.414-.007h.834c.307,0,.542,0,.764,0h.008c.023,0,.046,0,.07,0h.009a.74.74,0,0,0,.085.006.2.2,0,0,0,.2-.126,1.272,1.272,0,0,0-.1-1.2,1.266,1.266,0,0,0-1.014-.646c-.09,0-.181-.005-.27-.005s-.188,0-.283.006h-.05A.275.275,0,0,1,9.9,4.872a.216.216,0,0,1-.024-.187A.7.7,0,0,0,9.824,4.1a.641.641,0,0,0-.507-.16c-.1,0-.2.006-.3.013H9.008c-.13.008-.263.013-.4.013s-.274,0-.4-.014l-.05,0a.268.268,0,0,0-.217.076.291.291,0,0,0-.033.245.632.632,0,0,1-.057.529.69.69,0,0,1-.537.156l-.154,0-.092,0c-.775,0-1.123.382-1.129,1.238-.007.885-.007,1.689,0,2.459.008.83.377,1.2,1.195,1.213l.32,0h.008c.279,0,.627.008.956.008.405,0,.739-.006,1.05-.02h.05a.38.38,0,0,1,.295.091.493.493,0,0,1,.065.377c0,.048,0,.1,0,.144v.005a.421.421,0,0,1-.071.309.386.386,0,0,1-.281.082H9.481c-.392-.015-.807-.022-1.306-.022-.367,0-.738,0-1.066.007-.254,0-.508.005-.761.006-.033,0-.069,0-.1-.007a.921.921,0,0,0-.1-.007.212.212,0,0,0-.2.1,1.165,1.165,0,0,0,.025,1.1A1.264,1.264,0,0,0,6.9,12.8a2.994,2.994,0,0,0,.323.016c.109,0,.215,0,.352-.01Z"
                       transform="translate(12.179 11.684)"
                       stroke="rgba(0,0,0,0)"
-                      stroke-miterlimit="10"
-                      stroke-width="1"
+                      strokeMiterlimit="10"
+                      strokeWidth="1"
                       fill="url(#linear-gradient)"
                     />
                     <path
@@ -462,8 +462,8 @@ export default function Sidebar({}) {
                       d="M.48,13.8h0a.512.512,0,0,1-.38-.1.543.543,0,0,1-.1-.4c.015-1.586.014-3.2.012-4.759V8.444q0-.8,0-1.605,0-.787,0-1.574V5.171C.014,3.641.015,2.059,0,.5A.547.547,0,0,1,.1.1.512.512,0,0,1,.479,0H.5c1,.011,1.989.016,2.952.016S5.411.011,6.407,0h.024a.512.512,0,0,1,.378.1.547.547,0,0,1,.1.4c-.015,4.244-.015,8.548,0,12.792a.547.547,0,0,1-.1.4.519.519,0,0,1-.383.1H6.407c-.985-.011-1.979-.017-2.952-.017S1.487,13.789.5,13.8ZM5.465,9.835a.632.632,0,0,0-.476.126.505.505,0,0,0-.065.4,3.828,3.828,0,0,1,0,.921A.541.541,0,0,0,5,11.717a.572.572,0,0,0,.443.123h0a.533.533,0,0,0,.411-.119.51.51,0,0,0,.065-.413,1.969,1.969,0,0,1-.006-.288v-.005c0-.046,0-.091,0-.136,0-.06,0-.12,0-.172v0a2.388,2.388,0,0,1,.008-.376.475.475,0,0,0-.06-.383.483.483,0,0,0-.38-.11Zm-3,0a.541.541,0,0,0-.422.12.524.524,0,0,0-.069.42,5.183,5.183,0,0,1,0,.921.591.591,0,0,0,.076.441.462.462,0,0,0,.351.1h.037c.261-.006.4-.046.475-.137a.493.493,0,0,0,.053-.4,1.417,1.417,0,0,1-.007-.293c0-.043,0-.091,0-.137s0-.111,0-.166v-.008a2.066,2.066,0,0,1,.009-.379.448.448,0,0,0-.052-.362c-.067-.079-.19-.114-.413-.119ZM2.493,5.9c-.242,0-.385.042-.461.132a.507.507,0,0,0-.057.421,1.519,1.519,0,0,1,.007.294c0,.042,0,.089,0,.136s0,.111,0,.166V7.05a1.952,1.952,0,0,1-.01.379.431.431,0,0,0,.047.347c.075.091.219.115.427.124h.075A.481.481,0,0,0,2.9,7.788a.546.546,0,0,0,.072-.436,4.7,4.7,0,0,1,0-.921.552.552,0,0,0-.077-.423A.517.517,0,0,0,2.5,5.9Zm2.9,0A.5.5,0,0,0,5,6.012a.507.507,0,0,0-.074.4,4.715,4.715,0,0,1,0,.982.485.485,0,0,0,.066.382c.072.082.2.117.439.122h.03a.509.509,0,0,0,.4-.118.486.486,0,0,0,.06-.4,1.6,1.6,0,0,1-.007-.294V7.083c0-.042,0-.085,0-.127,0-.059,0-.121,0-.172a2.017,2.017,0,0,1,.009-.38.465.465,0,0,0-.056-.378c-.072-.085-.2-.122-.446-.126h-.03ZM5.328,1.939c-.338,0-.4.161-.4.645,0,.082,0,.164,0,.246V2.84c0,.178.007.362-.007.543A.624.624,0,0,0,5,3.855a.509.509,0,0,0,.386.113h.024a.569.569,0,0,0,.443-.131A.533.533,0,0,0,5.919,3.4a2.018,2.018,0,0,1-.007-.331c0-.049,0-.105,0-.16s0-.13,0-.2c0-.157,0-.32,0-.481S5.865,2,5.681,1.972A2.582,2.582,0,0,0,5.328,1.939ZM2.48,1.961c-.234,0-.365.036-.441.122a.517.517,0,0,0-.068.416,5.208,5.208,0,0,1,0,.92.6.6,0,0,0,.077.446.454.454,0,0,0,.344.1h.041c.265-.008.4-.049.478-.14a.491.491,0,0,0,.052-.4,1.429,1.429,0,0,1-.008-.292c0-.044,0-.091,0-.137s0-.109,0-.162V2.827a2.231,2.231,0,0,1,.009-.382.452.452,0,0,0-.055-.368c-.068-.079-.19-.113-.407-.116Z"
                       transform="translate(27.952 15.627)"
                       stroke="rgba(0,0,0,0)"
-                      stroke-miterlimit="10"
-                      stroke-width="1"
+                      strokeMiterlimit="10"
+                      strokeWidth="1"
                       fill="url(#linear-gradient)"
                     />
                     <path
@@ -537,8 +537,8 @@ export default function Sidebar({}) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#fff" />
-                      <stop offset="1" stop-color="#d2d2d2" />
+                      <stop offset="0" stopColor="#fff" />
+                      <stop offset="1" stopColor="#d2d2d2" />
                     </linearGradient>
                   </defs>
                   <g
@@ -678,8 +678,8 @@ export default function Sidebar({}) {
                       y2="0.004"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#fff" />
-                      <stop offset="1" stop-color="#d2d2d2" />
+                      <stop offset="0" stopColor="#fff" />
+                      <stop offset="1" stopColor="#d2d2d2" />
                     </linearGradient>
                     <linearGradient
                       id="linear-gradient-2"
@@ -695,8 +695,8 @@ export default function Sidebar({}) {
                       y2="1"
                       gradientUnits="objectBoundingBox"
                     >
-                      <stop offset="0" stop-color="#ed263d" />
-                      <stop offset="1" stop-color="#77131f" />
+                      <stop offset="0" stopColor="#ed263d" />
+                      <stop offset="1" stopColor="#77131f" />
                     </linearGradient>
                   </defs>
                   <g
@@ -843,8 +843,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -888,8 +888,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -933,8 +933,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -978,8 +978,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -1023,8 +1023,8 @@ export default function Sidebar({}) {
                   y2="1"
                   gradientUnits="objectBoundingBox"
                 >
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#d2d2d2" />
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
                 </linearGradient>
               </defs>
               <g
@@ -1076,9 +1076,9 @@ export default function Sidebar({}) {
                 transform="translate(-4.5 -8.051)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.2"
               />
               <path
                 id="Path_6621"
@@ -1087,9 +1087,9 @@ export default function Sidebar({}) {
                 transform="translate(-6.745 -3)"
                 fill="none"
                 stroke="#fff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.2"
               />
             </g>
           </svg>
@@ -1114,7 +1114,7 @@ export default function Sidebar({}) {
               transform="translate(0.833 0.5)"
               fill="#fff"
               stroke="#81313b"
-              stroke-width="1"
+              strokeWidth="1"
             />
           </svg>
           Logout

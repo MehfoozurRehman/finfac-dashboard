@@ -22,6 +22,7 @@ import SubCategoryPopup from "./components/SubCategoryPopup";
 import SubCategoryChildPopup from "./components/SubCategoryChildPopup";
 import LoanForm from "./screens/LoanForm";
 import ManageEntries from "./screens/ManageEntries";
+import PartnersPopup from "./components/PartnersPopup";
 
 function Dashboard() {
   return (
@@ -43,6 +44,8 @@ export default function App() {
     useState(false);
   const [isAddSubCategoryChildPopup, setIsAddSubCategoryChildPopup] =
     useState(false);
+  const [isEditPartnersPopup, setIsEditPartnersPopup] = useState(false);
+  const [isAddPartnersPopup, setIsAddPartnersPopup] = useState(false);
   return (
     <>
       {isEditUserRolePopup ? (
@@ -95,6 +98,19 @@ export default function App() {
         <SubCategoryChildPopup
           onClose={setIsAddSubCategoryChildPopup}
           onSubmit={setIsAddSubCategoryChildPopup}
+        />
+      ) : null}
+      {isEditPartnersPopup ? (
+        <PartnersPopup
+          isEdit
+          onClose={setIsEditPartnersPopup}
+          onSubmit={setIsEditPartnersPopup}
+        />
+      ) : null}
+      {isAddPartnersPopup ? (
+        <PartnersPopup
+          onClose={setIsAddPartnersPopup}
+          onSubmit={setIsAddPartnersPopup}
         />
       ) : null}
       <Routes>
@@ -192,7 +208,15 @@ export default function App() {
           <Route path="contact" element={<Contacts />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="testimonials" element={<Testimonials />} />
-          <Route path="partners" element={<Partners />} />
+          <Route
+            path="partners"
+            element={
+              <Partners
+                onAdd={setIsAddPartnersPopup}
+                onEdit={setIsEditPartnersPopup}
+              />
+            }
+          />
         </Route>
       </Routes>
     </>

@@ -49,9 +49,9 @@ export default function Loan({ heading }) {
                   transform="translate(-1.455 -1.455)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
                 <path
                   id="Path_21947"
@@ -60,9 +60,9 @@ export default function Loan({ heading }) {
                   transform="translate(0 0)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
               </g>
             </svg>
@@ -92,25 +92,166 @@ export default function Loan({ heading }) {
             <TableHeaderEntry title="Rate" />
             <TableHeaderEntry title="Spread" />
           </div>
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
-          <LoanTableEntry />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
+          <LoanTableEntry
+            onEdit={() => {
+              navigate("/dashboard/loan_form/edit");
+            }}
+          />
         </div>
       </div>
     </div>

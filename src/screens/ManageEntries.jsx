@@ -135,10 +135,12 @@ export default function ManageEntries({ heading }) {
       >
         <div className="main__content__form">
           {listOfEntries.map((item, i) => (
-            <label key={i} className="main__content__form__toggle">
-              <span>{item.name}</span>
-              <Toggle defaultChecked={item.default} icons={false} />
-            </label>
+            <div key={i} className="main__content__form__col">
+              <label className="main__content__form__toggle">
+                <span>{item.name}</span>
+                <Toggle defaultChecked={item.default} icons={false} />
+              </label>
+            </div>
           ))}
         </div>
       </div>

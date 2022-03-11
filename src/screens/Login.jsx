@@ -44,9 +44,9 @@ export default function Login() {
                       d="M5.008,6H21.069a2.014,2.014,0,0,1,2.008,2.008V20.054a2.014,2.014,0,0,1-2.008,2.008H5.008A2.014,2.014,0,0,1,3,20.054V8.008A2.014,2.014,0,0,1,5.008,6Z"
                       fill="none"
                       stroke="#828282"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
                     />
                     <path
                       id="Path_21802"
@@ -55,9 +55,9 @@ export default function Login() {
                       transform="translate(0 -0.992)"
                       fill="none"
                       stroke="#828282"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.5"
                     />
                   </g>
                 </svg>
@@ -85,9 +85,9 @@ export default function Login() {
                       transform="translate(-4.5 -8.051)"
                       fill="none"
                       stroke="#828282"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.2"
                     />
                     <path
                       id="Path_6621"
@@ -96,9 +96,9 @@ export default function Login() {
                       transform="translate(-6.745 -3)"
                       fill="none"
                       stroke="#828282"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1.2"
                     />
                   </g>
                 </svg>

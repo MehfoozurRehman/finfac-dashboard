@@ -3,14 +3,17 @@ import { Search } from "react-feather";
 import PartnersTableEntry from "../components/PartnersTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Partners() {
+export default function Partners({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
         <div className="main__header__top">
           <div className="main__header__top__heading">Partners</div>
           <div className="main__header__top__buttons">
-            <button className="main__header__top__buttons__button">
+            <button
+              className="main__header__top__buttons__button"
+              onClick={onAdd}
+            >
               Add New
             </button>
           </div>
@@ -36,25 +39,30 @@ export default function Partners() {
             <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
           </div>
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
-          <PartnersTableEntry />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>

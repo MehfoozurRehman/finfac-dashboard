@@ -806,8 +806,9 @@ body {
 }
 .popup__form__input__field {
   min-height: 40px;
+  max-height: 40px;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 0em 1.5em;
   font-size: 12px;
   flex: 1;
@@ -1034,15 +1035,36 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.main__content__form__col {
+  width: 33%;
+  margin-bottom: 2em;
+  padding-right: 1em;
+}
+.main__content__form__col .popup__form__input__field {
+  background-color: #f9f9ff;
+}
+
+.main__content__form__col .css-1s2u09g-control {
+  background-color: #f9f9ff;
+}
+.main__content__form__col .popup__form__upload {
+  margin-bottom: 1em;
+}
+.main__content__form__col .popup__form__upload__content {
+  background-color: #f9f9ff;
+}
+.css-1qt5ee3-control {
+  border-radius: 50px !important;
+  padding: 0em 0.5em;
+  background-color: #f9f9ff !important;
+}
 .main__content__form__toggle {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  margin-bottom: 2em;
 }
 .main__content__form__toggle span {
   margin-bottom: 0.3em;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   margin-left: 0.2em;
 }
