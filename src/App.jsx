@@ -19,6 +19,7 @@ import CustomersApplied from "./screens/CustomersApplied";
 import UserRolePopup from "./components/UserRolePopup";
 import CategoryPopup from "./components/CategoryPopup";
 import SubCategoryPopup from "./components/SubCategoryPopup";
+import SubCategoryChildPopup from "./components/SubCategoryChildPopup";
 
 function Dashboard() {
   return (
@@ -36,6 +37,10 @@ export default function App() {
   const [isAddCategoryPopup, setIsAddCategoryPopup] = useState(false);
   const [isEditSubCategoryPopup, setIsEditSubCategoryPopup] = useState(false);
   const [isAddSubCategoryPopup, setIsAddSubCategoryPopup] = useState(false);
+  const [isEditSubCategoryChildPopup, setIsEditSubCategoryChildPopup] =
+    useState(false);
+  const [isAddSubCategoryChildPopup, setIsAddSubCategoryChildPopup] =
+    useState(false);
   return (
     <>
       {isEditUserRolePopup ? (
@@ -77,6 +82,19 @@ export default function App() {
           onSubmit={setIsAddSubCategoryPopup}
         />
       ) : null}
+      {isEditSubCategoryChildPopup ? (
+        <SubCategoryChildPopup
+          isEdit
+          onClose={setIsEditSubCategoryChildPopup}
+          onSubmit={setIsEditSubCategoryChildPopup}
+        />
+      ) : null}
+      {isAddSubCategoryChildPopup ? (
+        <SubCategoryChildPopup
+          onClose={setIsAddSubCategoryChildPopup}
+          onSubmit={setIsAddSubCategoryChildPopup}
+        />
+      ) : null}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}>
@@ -111,7 +129,12 @@ export default function App() {
           />
           <Route
             path="category/sub_category/child"
-            element={<CategoryChild />}
+            element={
+              <CategoryChild
+                onAdd={setIsAddSubCategoryChildPopup}
+                onEdit={setIsEditSubCategoryChildPopup}
+              />
+            }
           />
           <Route
             path="invest_money/mutual_funds"

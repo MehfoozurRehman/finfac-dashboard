@@ -854,7 +854,7 @@ body {
 .css-1s2u09g-control {
   border-radius: 50px !important;
   padding: 0em 0.5em;
-  border: none;
+  border: none !important;
 }
 .css-14el2xx-placeholder {
   font-size: 12px;
@@ -867,5 +867,4 @@ body {
 .css-1qt5ee3-control {
   border-radius: 50px !important;
   padding: 0em 0.5em;
-  outline-width: 1px;
 }

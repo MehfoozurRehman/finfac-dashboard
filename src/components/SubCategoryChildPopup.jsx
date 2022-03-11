@@ -2,7 +2,7 @@ import React from "react";
 import { X } from "react-feather";
 import Select from "react-select";
 
-export default function SubCategoryPopup({ onClose, onSubmit, isEdit }) {
+export default function SubCategoryChildPopup({ onClose, onSubmit, isEdit }) {
   return (
     <div className="popup">
       <form className="popup__form">
@@ -14,7 +14,7 @@ export default function SubCategoryPopup({ onClose, onSubmit, isEdit }) {
           <X size={20} color="currentColor" strokeWidth={4} />
         </button>
         <div className="popup__form__heading">
-          {isEdit ? "Edit" : "Add"} Sub Category
+          {isEdit ? "Edit" : "Add"} Sub Category Child
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
@@ -29,6 +29,29 @@ export default function SubCategoryPopup({ onClose, onSubmit, isEdit }) {
         <div className="popup__form__row">
           <div className="popup__form__input">
             <div className="popup__form__input__label">Category</div>
+            <Select
+              options={[
+                { value: "chocolate", label: "Chocolate" },
+                { value: "strawberry", label: "Strawberry" },
+                { value: "vanilla", label: "Vanilla" },
+              ]}
+              theme={(theme) => ({
+                ...theme,
+
+                colors: {
+                  ...theme.colors,
+                  primary25: "#f6f6f6",
+                  primary: "#ed263d",
+                  primary50: "f6f6f6",
+                },
+              })}
+              isMulti
+            />
+          </div>
+        </div>
+        <div className="popup__form__row">
+          <div className="popup__form__input">
+            <div className="popup__form__input__label">Sub Category</div>
             <Select
               options={[
                 { value: "chocolate", label: "Chocolate" },

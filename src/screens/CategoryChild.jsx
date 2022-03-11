@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SubCategoryChildTableEntry from "../components/SubCategoryChildTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function CategoryChild() {
+export default function CategoryChild({ onAdd, onEdit }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -14,7 +14,10 @@ export default function CategoryChild() {
             {/* <button className="main__header__top__buttons__button">
               Bulk Add
             </button> */}
-            <button className="main__header__top__buttons__button">
+            <button
+              className="main__header__top__buttons__button"
+              onClick={onAdd}
+            >
               Add New
             </button>
           </div>
@@ -78,28 +81,33 @@ export default function CategoryChild() {
             <TableHeaderEntry title="Main Category" />
             <TableHeaderEntry title="Parent Category" />
           </div>
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
-          <SubCategoryChildTableEntry />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} />
         </div>
       </div>
     </div>
