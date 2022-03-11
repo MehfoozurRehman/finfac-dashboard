@@ -28,6 +28,7 @@ export default function Loan({ heading }) {
         <div className="main__header__bottom">
           <Link
             to="/dashboard/manage_entries"
+            state={{ data: { path: "/dashboard" } }}
             className="main__header__bottom__button"
           >
             <svg

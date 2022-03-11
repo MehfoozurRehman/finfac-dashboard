@@ -25,6 +25,7 @@ export default function SubCategory({ onAdd, onEdit }) {
         <div className="main__header__bottom">
           <Link
             to="/dashboard/manage_entries"
+            state={{ data: { path: "/dashboard/category/sub_category" } }}
             className="main__header__bottom__button"
           >
             <svg

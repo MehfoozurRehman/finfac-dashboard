@@ -1,8 +1,12 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
+import { useLocation, useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function ManageEntries({ heading }) {
+  const navigate = useNavigate();
+  const { state } = useLocation();
+  console.log(state);
   const listOfEntries = [
     {
       name: "Add image",
@@ -110,7 +114,12 @@ export default function ManageEntries({ heading }) {
       <div className="main__header" style={{ height: "8%" }}>
         <div className="main__header__top">
           <div className="main__header__top__heading">
-            <button className="main__header__top__heading__button">
+            <button
+              className="main__header__top__heading__button"
+              onClick={() => {
+                navigate(state ? state.data.path : "/dashboard");
+              }}
+            >
               <ArrowLeft size={20} color="currentColor" />
             </button>
             {heading}

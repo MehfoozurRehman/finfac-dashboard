@@ -15,6 +15,7 @@ export default function Customers() {
         <div className="main__header__bottom">
           <Link
             to="/dashboard/manage_entries"
+            state={{ data: { path: "/dashboard/customers" } }}
             className="main__header__bottom__button"
           >
             <svg

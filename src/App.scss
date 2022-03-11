@@ -524,6 +524,25 @@ body {
   font-size: 25px;
   color: #242424;
   font-weight: bold;
+  display: flex;
+}
+.main__header__top__heading__button {
+  background-color: transparent;
+  border: none;
+  margin-right: 1em;
+  cursor: pointer;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.main__header__top__heading__button:hover {
+  transition: 300ms ease-in-out;
+  color: #ed263d;
 }
 .main__header__top__buttons {
   display: flex;
