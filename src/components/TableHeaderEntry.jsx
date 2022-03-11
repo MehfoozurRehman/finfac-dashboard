@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-export default function TableHeaderEntry({ title }) {
+export default function TableHeaderEntry({ title, style }) {
   const [asending, setAsending] = useState(false);
   return (
-    <div className="main__content__table__header__entry">
+    <div className="main__content__table__header__entry" style={style}>
       {title}
       {title === "Action" ? null : (
         <button
