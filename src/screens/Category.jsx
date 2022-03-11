@@ -74,7 +74,8 @@ export default function Category() {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Active Image" />
+            <TableHeaderEntry title="Inactive Image" />
             <TableHeaderEntry title="Name" />
           </div>
           <CategoryTableEntry />

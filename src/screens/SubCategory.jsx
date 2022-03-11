@@ -75,7 +75,6 @@ export default function SubCategory() {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
             <TableHeaderEntry title="Parent Category" />
           </div>

@@ -74,7 +74,6 @@ export default function CategoryChild() {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
             <TableHeaderEntry title="Main Category" />
             <TableHeaderEntry title="Parent Category" />

@@ -11,6 +11,11 @@ import SubCategory from "./screens/SubCategory";
 import Sidebar from "./components/Sidebar";
 import Users from "./screens/Users";
 import UserRole from "./screens/UserRole";
+import Contacts from "./screens/Contacts";
+import Blogs from "./screens/Blogs";
+import Testimonials from "./screens/Testimonials";
+import Partners from "./screens/Partners";
+import CustomersApplied from "./screens/CustomersApplied";
 
 function Dashboard() {
   return (
@@ -53,6 +58,10 @@ export default function App() {
           element={<Loan heading="Car Loans" />}
         />
         <Route
+          path="need_money/home_loans"
+          element={<Loan heading="H Loaomens" />}
+        />
+        <Route
           path="protection/health_insurance"
           element={<Loan heading="Health Insurance" />}
         />
@@ -69,6 +78,11 @@ export default function App() {
           element={<Loan heading="Car Insurance" />}
         />
         <Route path="customers" element={<Customers />} />
+        <Route path="customers/applied" element={<CustomersApplied />} />
+        <Route path="contact" element={<Contacts />} />
+        <Route path="blogs" element={<Blogs />} />
+        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="partners" element={<Partners />} />
       </Route>
     </Routes>
   );

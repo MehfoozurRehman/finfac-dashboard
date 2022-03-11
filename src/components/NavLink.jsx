@@ -54,7 +54,7 @@ export default function NavLink({ title, to, svg, list }) {
                       <input
                         type="radio"
                         className="nav__link__sub__dropdown__entry__input"
-                        name="nav__link__dropdown__entry__input"
+                        name="nav__link__sub__dropdown__entry__input"
                         defaultChecked={subItem.to === window.location.pathname}
                         onClick={() => {
                           navigate(subItem.to);
