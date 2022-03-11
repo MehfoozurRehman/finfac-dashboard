@@ -59,7 +59,7 @@ export default function App() {
         />
         <Route
           path="need_money/home_loans"
-          element={<Loan heading="H Loaomens" />}
+          element={<Loan heading="Home Loans" />}
         />
         <Route
           path="protection/health_insurance"

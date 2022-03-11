@@ -4,32 +4,34 @@ import { useNavigate } from "react-router-dom";
 export default function NavLink({ title, to, svg, list }) {
   const navigate = useNavigate();
   const [selected, setSelected] = useState(
-    to === window.location.pathname || window.location.pathname.includes(to)
+    window.localStorage.getItem("selectedMain")
   );
-  const [dropDownselected, setDropDownselected] = useState(0);
+  const [dropDownselected, setDropDownselected] = useState("");
+
   return (
     <div className="nav__link">
       <div
         className="nav__link__entry"
-        style={list && selected ? { marginBottom: ".5em" } : null}
+        style={list && selected === title ? { marginBottom: ".5em" } : null}
       >
         <input
           type="radio"
-          defaultChecked={selected}
+          defaultChecked={selected === title}
           className="nav__link__entry__input"
           name="nav__link__entry__input"
           onClick={() => {
             navigate(to);
-            selected
+            selected === title
               ? setSelected(false)
-              : setSelected(to === window.location.pathname);
+              : setSelected(title) &&
+                window.localStorage.setItem("selectedMain", title);
           }}
         />
         <div className="nav__link__entry__content">
           {svg} {title}
         </div>
       </div>
-      {list && selected
+      {list && selected === title
         ? list.map((item, i) => (
             <div className="nav__link__dropdown" key={i}>
               <div className="nav__link__dropdown__entry">
@@ -37,7 +39,6 @@ export default function NavLink({ title, to, svg, list }) {
                   type="radio"
                   className="nav__link__dropdown__entry__input"
                   name="nav__link__dropdown__entry__input"
-                  defaultChecked={item.to === window.location.pathname}
                   onClick={() => {
                     navigate(item.to);
                     setDropDownselected(i);
@@ -54,8 +55,7 @@ export default function NavLink({ title, to, svg, list }) {
                       <input
                         type="radio"
                         className="nav__link__sub__dropdown__entry__input"
-                        name="nav__link__sub__dropdown__entry__input"
-                        defaultChecked={subItem.to === window.location.pathname}
+                        name="nav__link__dropdown__entry__input"
                         onClick={() => {
                           navigate(subItem.to);
                         }}
