@@ -272,6 +272,44 @@ export default function App() {
                   "3 year",
                   "5 year",
                 ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "AMC Rating", type: "input" },
+                  { label: "AUM Billion", type: "input" },
+                  { label: "Sahriah compliant option", type: "input" },
+                  {
+                    label: "Web portal and App",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Online Account opening", type: "input" },
+                  {
+                    label: "Online Investment",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Debit Card", type: "input" },
+                  { label: "Interbank Fund Transfer", type: "input" },
+                  { label: "Additional Coverage - Insurance", type: "input" },
+                  { label: "WhatsApp Service", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "30 Days", type: "input" },
+                  { label: "90 Days", type: "input" },
+                  { label: "365 Days", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "1 year", type: "input" },
+                  { label: "3 year", type: "input" },
+                  { label: "5 year", type: "input" },
+                ]}
                 heading="Mutual Funds"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -295,6 +333,44 @@ export default function App() {
                   "WHT on Profit - %",
                   "Risk Level",
                   "Instrument Limit",
+                ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "AMC Rating", type: "input" },
+                  { label: "AUM Billion", type: "input" },
+                  { label: "Sahriah compliant option", type: "input" },
+                  {
+                    label: "Web portal and App",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Online Account opening", type: "input" },
+                  {
+                    label: "Online Investment",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Debit Card", type: "input" },
+                  { label: "Interbank Fund Transfer", type: "input" },
+                  { label: "Additional Coverage - Insurance", type: "input" },
+                  { label: "WhatsApp Service", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "30 Days", type: "input" },
+                  { label: "90 Days", type: "input" },
+                  { label: "365 Days", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "1 year", type: "input" },
+                  { label: "3 year", type: "input" },
+                  { label: "5 year", type: "input" },
                 ]}
                 heading="National Savings"
                 onDelete={setIsDeleteConfirmation}
@@ -329,6 +405,11 @@ export default function App() {
                   "Zero Loss Liability ",
                   "SMS Charges",
                 ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "AMC Rating", type: "input" },
+                ]}
                 heading="Credit Card"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -343,7 +424,7 @@ export default function App() {
                   "Name",
                   "Image",
                   "Is Featured",
-                  "Type ",
+                  "Type",
                   "Minimum Down Payment",
                   "Rate Category",
                   "Kibor -Dropdown",
@@ -362,6 +443,27 @@ export default function App() {
                   "Deferred instalment facility",
                   "Who will bear registration cost?",
                   "Occupation",
+                ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "Type", type: "input" },
+                  { label: "Minimum Down Payment", type: "input" },
+                  { label: "Rate Category", type: "input" },
+                  { label: "Kibor -Dropdown", type: "input" },
+                  { label: "Spread", type: "input" },
+                  { label: "Insurance Rate", type: "input" },
+                  { label: "Processing Fee", type: "input" },
+                  { label: "Application Fee", type: "input" },
+                  { label: "Tracker Charges", type: "input" },
+                  { label: "Registration Cost", type: "input" },
+                  { label: "Late Payment Charges", type: "input" },
+                  { label: "Baloon Payment", type: "input" },
+                  { label: "Baloon Payment Charges", type: "input" },
+                  { label: "Ownership", type: "input" },
+                  { label: "Deferred instalment facility", type: "input" },
+                  { label: "Who will bear registration cost?", type: "input" },
+                  { label: "Occupation", type: "input" },
                 ]}
                 heading="Auto Loan"
                 onDelete={setIsDeleteConfirmation}
@@ -386,6 +488,19 @@ export default function App() {
                   "WHT on Profit - %",
                   "Risk Level",
                   "Instrument Limit",
+                ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "Rate - %", type: "input" },
+                  { label: "Time Period", type: "input" },
+                  { label: "Profit Paid", type: "input" },
+                  { label: "Lock In Period", type: "input" },
+                  { label: "Early Encashment", type: "input" },
+                  { label: "Zakat Deduction", type: "input" },
+                  { label: "WHT on Profit - %", type: "input" },
+                  { label: "Risk Level", type: "input" },
+                  { label: "Instrument Limit", type: "input" },
                 ]}
                 heading="Car Loans"
                 onDelete={setIsDeleteConfirmation}
@@ -419,6 +534,44 @@ export default function App() {
                   "Deferred Instalment",
                   "Occupation",
                 ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "AMC Rating", type: "input" },
+                  { label: "AUM Billion", type: "input" },
+                  { label: "Sahriah compliant option", type: "input" },
+                  {
+                    label: "Web portal and App",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Online Account opening", type: "input" },
+                  {
+                    label: "Online Investment",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Debit Card", type: "input" },
+                  { label: "Interbank Fund Transfer", type: "input" },
+                  { label: "Additional Coverage - Insurance", type: "input" },
+                  { label: "WhatsApp Service", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "30 Days", type: "input" },
+                  { label: "90 Days", type: "input" },
+                  { label: "365 Days", type: "input" },
+                  { label: "Fund Name", type: "input" },
+                  { label: "1 year", type: "input" },
+                  { label: "3 year", type: "input" },
+                  { label: "5 year", type: "input" },
+                ]}
                 heading="Home Loans"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -447,6 +600,23 @@ export default function App() {
                   "Maternity",
                   "Outside Network Reimbursement",
                 ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "Premium", type: "input" },
+                  { label: "Room Limit", type: "input" },
+                  { label: "Hospitalization Limit", type: "input" },
+                  { label: "Accidental Injury treatment", type: "input" },
+                  { label: "Hospitalization Costs?", type: "input" },
+                  { label: "Expenses before hospitalization?", type: "input" },
+                  { label: "Expenses after hospitalization?", type: "input" },
+                  { label: "Day care surgery", type: "input" },
+                  { label: "Radiotherapy", type: "input" },
+                  { label: "Pre-existing conditions", type: "input" },
+                  { label: "Waiting period", type: "input" },
+                  { label: "Maternity", type: "input" },
+                  { label: "Outside Network Reimbursement", type: "input" },
+                ]}
                 heading="Health Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -468,6 +638,18 @@ export default function App() {
                   "Coverage Amount",
                   "Date of Birth",
                   "Plan type",
+                ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "Premium", type: "input" },
+                  { label: "Room Limit", type: "input" },
+                  { label: "Accidental Death", type: "input" },
+                  { label: "Accidental Disability", type: "input" },
+                  { label: "Accidental hospitalization", type: "input" },
+                  { label: "Coverage Amount", type: "input" },
+                  { label: "Date of Birth", type: "input" },
+                  { label: "Plan type", type: "input" },
                 ]}
                 heading="Life Insurance"
                 onDelete={setIsDeleteConfirmation}
@@ -500,6 +682,39 @@ export default function App() {
                   "Passenger",
                   "Date of Birth",
                 ]}
+                formEntryList={[
+                  { label: "Premium", type: "input" },
+                  { label: "Medical Cover", type: "input" },
+                  { label: "Coverage upto", type: "input" },
+                  { label: "Emergency medical cover", type: "input" },
+                  { label: "Repatriation of mortal remains", type: "input" },
+                  { label: "Emergency medical evacuation", type: "input" },
+                  { label: "Emergency Dental care", type: "input" },
+                  { label: "Emergency return home", type: "input" },
+                  { label: "Deductible", type: "input" },
+                  {
+                    label: "Accidental death / permanent disability",
+                    type: "input",
+                  },
+                  { label: "Baggage loss", type: "input" },
+                  { label: "Baggage delay", type: "input" },
+                  { label: "Flight delay", type: "input" },
+                  { label: "Trip cancellation", type: "input" },
+                  { label: "Credit card loss", type: "input" },
+                  { label: "Passport loss", type: "input" },
+                  {
+                    label: "Country",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Travel time", type: "input" },
+                  { label: "Passenger", type: "input" },
+                  { label: "Date of Birth", type: "input" },
+                ]}
                 heading="Travel Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -530,13 +745,56 @@ export default function App() {
                   "Emergency Medical Expenses",
                   "Cal Centre Support ",
                   "In-House Surveyors",
-                  "In-House Surveyors",
                   "Replacement at Doorstep",
                   "Mobile App",
                   "Self-Assessment at approved dealership",
                   "Make",
                   "Model",
                   "Year of Manufacturing",
+                ]}
+                formEntryList={[
+                  { label: "Ref", type: "input" },
+                  { label: "Name", type: "input" },
+                  { label: "Insurance Rate -%", type: "input" },
+                  {
+                    label: "Tracker Option",
+                    type: "select",
+                    options: [
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" },
+                    ],
+                  },
+                  { label: "Accidental Damages", type: "input" },
+                  { label: "Fire", type: "input" },
+                  { label: "Total Loss", type: "input" },
+                  { label: "Theft/Snatch", type: "input" },
+                  { label: "Natural Calamities", type: "input" },
+                  { label: "Riots and Strike", type: "input" },
+                  { label: "Terrorism", type: "input" },
+                  {
+                    label: "Deductible",
+                    type: "select",
+                    options: [
+                      { value: true, label: "True" },
+                      { value: false, label: "False" },
+                    ],
+                  },
+                  { label: "No Claim Discount", type: "input" },
+                  { label: "Death Bodily Injury", type: "input" },
+                  { label: "Property Damages", type: "input" },
+                  { label: "Emergency Medical Expenses", type: "input" },
+                  { label: "Cal Centre Support ", type: "input" },
+                  { label: "In-House Surveyors", type: "input" },
+                  { label: "Replacement at Doorstep", type: "input" },
+                  { label: "Mobile App", type: "input" },
+                  {
+                    label: "Self-Assessment at approved dealership",
+                    type: "input",
+                  },
+                  { label: "Make", type: "input" },
+                  { label: "Model", type: "input" },
+                  { label: "Year of Manufacturing", type: "input" },
                 ]}
                 heading="Car Insurance"
                 onDelete={setIsDeleteConfirmation}

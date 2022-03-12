@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Loan({ heading, onDelete, headerList }) {
+export default function Loan({ heading, onDelete, headerList, formEntryList }) {
   const navigate = useNavigate();
 
   return (
@@ -19,7 +19,7 @@ export default function Loan({ heading, onDelete, headerList }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate("/dashboard/loan_form/add");
+                navigate("/dashboard/loan_form/add", { state: formEntryList });
               }}
             >
               Add New
@@ -29,7 +29,7 @@ export default function Loan({ heading, onDelete, headerList }) {
         <div className="main__header__bottom">
           <Link
             to="/dashboard/manage_entries"
-            state={{ data: { path: "/dashboard" } }}
+            state={{ data: { path: "/dashboard", list: formEntryList } }}
             className="main__header__bottom__button"
           >
             <svg
@@ -91,181 +91,175 @@ export default function Loan({ heading, onDelete, headerList }) {
           </div>
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
           <LoanTableEntry
             onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/loan_form/edit");
+              navigate("/dashboard/loan_form/edit", { state: formEntryList });
             }}
             onDelete={onDelete}
           />
