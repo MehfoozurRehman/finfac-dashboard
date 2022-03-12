@@ -3,7 +3,7 @@ import { X } from "react-feather";
 import UploadImage from "./UploadImage";
 import Toggle from "react-toggle";
 
-export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
+export default function BanksPopup({ onClose, onSubmit, isEdit }) {
   return (
     <div className="popup">
       <form className="popup__form">
@@ -15,7 +15,7 @@ export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
           <X size={20} color="currentColor" strokeWidth={4} />
         </button>
         <div className="popup__form__heading">
-          {isEdit ? "Edit" : "Add"} Partner
+          {isEdit ? "Edit" : "Add"} Bank
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">

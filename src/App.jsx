@@ -31,6 +31,9 @@ import ChangePassword from "./screens/ChangePassword";
 import ForgotPassword from "./screens/ForgotPassword";
 import Kibors from "./screens/Kibors";
 import KiborsPopup from "./components/KiborsPopup";
+import BanksPopup from "./components/BanksPopup";
+import DailyRatesPopup from "./components/DailyRatesPopup";
+import DailyRates from "./screens/DailyRates";
 
 function Dashboard() {
   return (
@@ -58,6 +61,10 @@ export default function App() {
   const [isAddBlogsPopup, setIsAddBlogsPopup] = useState(false);
   const [isEditKiborsPopup, setIsEditKiborsPopup] = useState(false);
   const [isAddKiborsPopup, setIsAddKiborsPopup] = useState(false);
+  const [isEditBanksPopup, setIsEditBanksPopup] = useState(false);
+  const [isAddBanksPopup, setIsAddBanksPopup] = useState(false);
+  const [isEditDailyRatesPopup, setIsEditDailyRatesPopup] = useState(false);
+  const [isAddDailyRatesPopup, setIsAddDailyRatesPopup] = useState(false);
   const [isDeleteConfirmation, setIsDeleteConfirmation] = useState(false);
 
   return (
@@ -154,9 +161,35 @@ export default function App() {
         />
       ) : null}
       {isAddKiborsPopup ? (
-        <BlogsPopup
+        <KiborsPopup
           onClose={setIsAddKiborsPopup}
           onSubmit={setIsAddKiborsPopup}
+        />
+      ) : null}
+      {isEditBanksPopup ? (
+        <BanksPopup
+          isEdit
+          onClose={setIsEditBanksPopup}
+          onSubmit={setIsEditBanksPopup}
+        />
+      ) : null}
+      {isAddBanksPopup ? (
+        <BanksPopup
+          onClose={setIsAddBanksPopup}
+          onSubmit={setIsAddBanksPopup}
+        />
+      ) : null}
+      {isEditDailyRatesPopup ? (
+        <DailyRatesPopup
+          isEdit
+          onClose={setIsEditDailyRatesPopup}
+          onSubmit={setIsEditDailyRatesPopup}
+        />
+      ) : null}
+      {isAddDailyRatesPopup ? (
+        <DailyRatesPopup
+          onClose={setIsAddDailyRatesPopup}
+          onSubmit={setIsAddDailyRatesPopup}
         />
       ) : null}
 
@@ -339,6 +372,26 @@ export default function App() {
               <Kibors
                 onAdd={setIsAddKiborsPopup}
                 onEdit={setIsEditKiborsPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="banks"
+            element={
+              <Kibors
+                onAdd={setIsAddBanksPopup}
+                onEdit={setIsEditBanksPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="daily_rates"
+            element={
+              <DailyRates
+                onAdd={setIsAddDailyRatesPopup}
+                onEdit={setIsEditDailyRatesPopup}
                 onDelete={setIsDeleteConfirmation}
               />
             }

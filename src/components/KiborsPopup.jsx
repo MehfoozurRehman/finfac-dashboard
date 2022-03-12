@@ -41,14 +41,6 @@ export default function KiborsPopup({ onClose, onSubmit, isEdit }) {
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
-            <div className="popup__form__input__label">Is Featured</div>
-            <label className="main__content__form__toggle">
-              <Toggle defaultChecked={false} icons={false} />
-            </label>
-          </div>
-        </div>
-        <div className="popup__form__row">
-          <div className="popup__form__input">
             <div className="popup__form__input__label">Rate</div>
             <input
               type="text"
@@ -60,6 +52,12 @@ export default function KiborsPopup({ onClose, onSubmit, isEdit }) {
         </div>
         <div className="popup__form__row">
           <UploadImage label="Image" />
+          <div className="popup__form__input">
+            <div className="popup__form__input__label">Is Featured</div>
+            <label className="main__content__form__toggle">
+              <Toggle defaultChecked={false} icons={false} />
+            </label>
+          </div>
         </div>
         <button onClick={() => onSubmit(false)} className="popup__form__button">
           {isEdit ? "Edit" : "Add"}
