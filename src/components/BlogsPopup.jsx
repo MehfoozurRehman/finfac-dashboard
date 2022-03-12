@@ -25,6 +25,7 @@ export default function BlogsPopup({ onClose, onSubmit, isEdit }) {
               className="popup__form__input__field"
               placeholder="Enter Title"
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
@@ -35,6 +36,7 @@ export default function BlogsPopup({ onClose, onSubmit, isEdit }) {
               className="popup__form__input__field"
               placeholder="Enter Author"
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
@@ -45,6 +47,7 @@ export default function BlogsPopup({ onClose, onSubmit, isEdit }) {
               className="popup__form__input__field"
               placeholder="Enter Date Created"
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
@@ -68,6 +71,7 @@ export default function BlogsPopup({ onClose, onSubmit, isEdit }) {
               })}
               isMulti
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">

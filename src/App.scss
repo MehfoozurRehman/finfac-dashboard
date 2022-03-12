@@ -798,6 +798,15 @@ body {
   flex-direction: column;
   flex: 1;
   margin-bottom: 1em;
+  position: relative;
+}
+.popup__form__input__error {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-weight: bold;
 }
 .popup__form__input__label {
   font-size: 12px;

@@ -49,6 +49,7 @@ export default function TestimonialsForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -59,6 +60,7 @@ export default function TestimonialsForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -82,6 +84,7 @@ export default function TestimonialsForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col" style={{ width: "15%" }}>
@@ -91,6 +94,7 @@ export default function TestimonialsForm({ heading }) {
             <div className="popup__form__input">
               <div className="popup__form__input__label">Message</div>
               <TextArea />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
         </div>

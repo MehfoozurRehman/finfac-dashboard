@@ -24,6 +24,7 @@ export default function SubCategoryPopup({ onClose, onSubmit, isEdit }) {
               className="popup__form__input__field"
               placeholder="Enter Name"
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
@@ -47,6 +48,7 @@ export default function SubCategoryPopup({ onClose, onSubmit, isEdit }) {
               })}
               isMulti
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <button onClick={() => onSubmit(false)} className="popup__form__button">

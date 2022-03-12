@@ -53,6 +53,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -76,6 +77,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -86,6 +88,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -109,6 +112,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -119,6 +123,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -142,6 +147,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -152,6 +158,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -175,6 +182,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -185,6 +193,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -208,6 +217,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -218,6 +228,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -241,6 +252,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -251,6 +263,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -274,6 +287,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -284,6 +298,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -307,6 +322,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -317,6 +333,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -340,6 +357,42 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
+              <div className="popup__form__input__error"></div>
+            </div>
+          </div>{" "}
+          <div className="main__content__form__col">
+            <div className="popup__form__input">
+              <div className="popup__form__input__label">Name</div>
+              <input
+                type="text"
+                className="popup__form__input__field"
+                placeholder="Enter Name"
+              />
+              <div className="popup__form__input__error"></div>
+            </div>
+          </div>
+          <div className="main__content__form__col">
+            <div className="popup__form__input">
+              <div className="popup__form__input__label">Category</div>
+              <Select
+                options={[
+                  { value: "chocolate", label: "Chocolate" },
+                  { value: "strawberry", label: "Strawberry" },
+                  { value: "vanilla", label: "Vanilla" },
+                ]}
+                theme={(theme) => ({
+                  ...theme,
+
+                  colors: {
+                    ...theme.colors,
+                    primary25: "#f6f6f6",
+                    primary: "#ed263d",
+                    primary50: "f6f6f6",
+                  },
+                })}
+                isMulti
+              />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -350,6 +403,7 @@ export default function LoanForm({ heading }) {
                 className="popup__form__input__field"
                 placeholder="Enter Name"
               />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
           <div className="main__content__form__col">
@@ -373,369 +427,7 @@ export default function LoanForm({ heading }) {
                 })}
                 isMulti
               />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Name</div>
-              <input
-                type="text"
-                className="popup__form__input__field"
-                placeholder="Enter Name"
-              />
-            </div>
-          </div>
-          <div className="main__content__form__col">
-            <div className="popup__form__input">
-              <div className="popup__form__input__label">Category</div>
-              <Select
-                options={[
-                  { value: "chocolate", label: "Chocolate" },
-                  { value: "strawberry", label: "Strawberry" },
-                  { value: "vanilla", label: "Vanilla" },
-                ]}
-                theme={(theme) => ({
-                  ...theme,
-
-                  colors: {
-                    ...theme.colors,
-                    primary25: "#f6f6f6",
-                    primary: "#ed263d",
-                    primary50: "f6f6f6",
-                  },
-                })}
-                isMulti
-              />
+              <div className="popup__form__input__error"></div>
             </div>
           </div>
         </div>

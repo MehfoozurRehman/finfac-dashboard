@@ -24,6 +24,7 @@ export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
               className="popup__form__input__field"
               placeholder="Enter Name"
             />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">
