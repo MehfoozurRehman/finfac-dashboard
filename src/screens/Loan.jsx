@@ -4,8 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Loan({ heading, onDelete }) {
+export default function Loan({ heading, onDelete, headerList }) {
   const navigate = useNavigate();
+
   return (
     <div className="main">
       <div className="main__header">
@@ -84,13 +85,9 @@ export default function Loan({ heading, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Image" />
-            <TableHeaderEntry title="Name" />
-            <TableHeaderEntry title="Ref" />
-            <TableHeaderEntry title="Featured" />
-            <TableHeaderEntry title="Type" />
-            <TableHeaderEntry title="Rate" />
-            <TableHeaderEntry title="Spread" />
+            {headerList.map((item) => (
+              <TableHeaderEntry title={item} />
+            ))}
           </div>
           <LoanTableEntry
             onEdit={() => {

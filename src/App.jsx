@@ -247,13 +247,55 @@ export default function App() {
           <Route
             path="invest_money/mutual_funds"
             element={
-              <Loan heading="Mutual Funds" onDelete={setIsDeleteConfirmation} />
+              <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "AMC Rating",
+                  "AUM Billion",
+                  "Sahriah compliant option",
+                  "Web portal and App",
+                  "Online Account opening",
+                  "Online Investment",
+                  "Debit Card",
+                  "Interbank Fund Transfer",
+                  "Additional Coverage - Insurance",
+                  "WhatsApp Service",
+                  "Fund Name",
+                  "30 Days",
+                  "90 Days",
+                  "365 Days",
+                  "Fund Name",
+                  "1 year",
+                  "3 year",
+                  "5 year",
+                ]}
+                heading="Mutual Funds"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
             path="invest_money/national_savings"
             element={
               <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Rate - %",
+                  "Time Period",
+                  "Profit Paid",
+                  "Lock In Period",
+                  "Early Encashment",
+                  "Zakat Deduction",
+                  "WHT on Profit - %",
+                  "Risk Level",
+                  "Instrument Limit",
+                ]}
                 heading="National Savings"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -262,31 +304,149 @@ export default function App() {
           <Route
             path="need_money/credit_card"
             element={
-              <Loan heading="Credit Card" onDelete={setIsDeleteConfirmation} />
+              <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Interest Rate - %",
+                  "Annual Fee",
+                  "Waiver of Annual Fee",
+                  "Chip Maintenance Fee",
+                  "Late Payment Fee",
+                  "Cash Advance Facility",
+                  "Cash Advance Rate - %",
+                  "Cash Advance Fee",
+                  "Balance Transfer Rate - %",
+                  "Balance Transfer Chargers",
+                  "Card Type",
+                  "Time period required for waiver",
+                  "Interest Free Period - Days",
+                  "Balance Transfer Facility",
+                  "Foreign Transaction Fee",
+                  "Reward Points",
+                  "Zero Loss Liability ",
+                  "SMS Charges",
+                ]}
+                heading="Credit Card"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
             path="need_money/auto_loan"
             element={
-              <Loan heading="Auto Loan" onDelete={setIsDeleteConfirmation} />
+              <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Type ",
+                  "Minimum Down Payment",
+                  "Rate Category",
+                  "Kibor -Dropdown",
+                  "Spread",
+                  "Insurance Rate",
+                  "Processing Fee",
+                  "Application Fee",
+                  "Tracker Charges",
+                  "Registration Cost",
+                  "Late Payment Charges",
+                  "Baloon Payment",
+                  "Baloon Payment Charges",
+                  "Prepayment",
+                  "Prepayment Charges",
+                  "Ownership",
+                  "Deferred instalment facility",
+                  "Who will bear registration cost?",
+                  "Occupation",
+                ]}
+                heading="Auto Loan"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
             path="need_money/car_loans"
             element={
-              <Loan heading="Car Loans" onDelete={setIsDeleteConfirmation} />
+              <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Rate - %",
+                  "Time Period",
+                  "Profit Paid",
+                  "Lock In Period",
+                  "Early Encashment",
+                  "Zakat Deduction",
+                  "WHT on Profit - %",
+                  "Risk Level",
+                  "Instrument Limit",
+                ]}
+                heading="Car Loans"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
             path="need_money/home_loans"
             element={
-              <Loan heading="Home Loans" onDelete={setIsDeleteConfirmation} />
+              <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Minimum down payment",
+                  "Type",
+                  "Category",
+                  "KIBOR -Dropdown",
+                  "Spread",
+                  "Insurance Rate",
+                  "Processing Fee",
+                  "Application Fee",
+                  "Max Limit -%",
+                  "Late Payment Charges",
+                  "Baloon Payment",
+                  "Baloon Payment Charges",
+                  "Prepayment",
+                  "Prepayment Charges",
+                  "Financing Limit",
+                  "Deferred Instalment",
+                  "Occupation",
+                ]}
+                heading="Home Loans"
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
           <Route
             path="protection/health_insurance"
             element={
               <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Premium",
+                  "Room Limit",
+                  "Hospitalization Limit",
+                  "Accidental Injury treatment",
+                  "Hospitalization Costs?",
+                  "Expenses before hospitalization?",
+                  "Expenses after hospitalization?",
+                  "Day care surgery",
+                  "Radiotherapy",
+                  "Pre-existing conditions",
+                  "Waiting period",
+                  "Maternity",
+                  "Outside Network Reimbursement",
+                ]}
                 heading="Health Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -296,6 +456,19 @@ export default function App() {
             path="protection/life_insurance"
             element={
               <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Is Featured",
+                  "Premium",
+                  "Room Limit",
+                  "Accidental Death",
+                  "Accidental Disability",
+                  "Accidental hospitalization",
+                  "Coverage Amount",
+                  "Date of Birth",
+                  "Plan type",
+                ]}
                 heading="Life Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -305,6 +478,28 @@ export default function App() {
             path="protection/travel_insurance"
             element={
               <Loan
+                headerList={[
+                  "Premium",
+                  "Medical Cover",
+                  "Coverage upto",
+                  "Emergency medical cover",
+                  "Repatriation of mortal remains",
+                  "Emergency medical evacuation",
+                  "Emergency Dental care",
+                  "Emergency return home",
+                  "Deductible",
+                  "Accidental death / permanent disability",
+                  "Baggage loss",
+                  "Baggage delay",
+                  "Flight delay",
+                  "Trip cancellation",
+                  "Credit card loss",
+                  "Passport loss",
+                  "Country",
+                  "Travel time",
+                  "Passenger",
+                  "Date of Birth",
+                ]}
                 heading="Travel Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
@@ -314,6 +509,35 @@ export default function App() {
             path="protection/car_insurance"
             element={
               <Loan
+                headerList={[
+                  "Ref",
+                  "Name",
+                  "Image",
+                  "Is Featured",
+                  "Insurance Rate -%",
+                  "Tracker Option",
+                  "Accidental Damages",
+                  "Fire",
+                  "Total Loss",
+                  "Theft/Snatch",
+                  "Natural Calamities",
+                  "Riots and Strike",
+                  "Terrorism",
+                  "Deductible",
+                  "No Claim Discount",
+                  "Death Bodily Injury",
+                  "Property Damages",
+                  "Emergency Medical Expenses",
+                  "Cal Centre Support ",
+                  "In-House Surveyors",
+                  "In-House Surveyors",
+                  "Replacement at Doorstep",
+                  "Mobile App",
+                  "Self-Assessment at approved dealership",
+                  "Make",
+                  "Model",
+                  "Year of Manufacturing",
+                ]}
                 heading="Car Insurance"
                 onDelete={setIsDeleteConfirmation}
               />
