@@ -26,6 +26,9 @@ import PartnersPopup from "./components/PartnersPopup";
 import BlogsPopup from "./components/BlogsPopup";
 import TestimonialsForm from "./screens/TestimonialsForm";
 import DeleteConfirmation from "./components/DeleteConfirmation";
+import Signup from "./screens/Signup";
+import ChangePassword from "./screens/ChangePassword";
+import ForgotPassword from "./screens/ForgotPassword";
 
 function Dashboard() {
   return (
@@ -142,6 +145,9 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/sign_up" element={<Signup />} />
+        <Route path="/change_password" element={<ChangePassword />} />
+        <Route path="/forgot_password" element={<ForgotPassword />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
           <Route
