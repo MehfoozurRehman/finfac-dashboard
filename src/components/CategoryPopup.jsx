@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Plus, X } from "react-feather";
+import React from "react";
+import { X } from "react-feather";
 import UploadImage from "./UploadImage";
 
 export default function CategoryPopup({ onClose, onSubmit, isEdit }) {

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SubCategoryChildTableEntry from "../components/SubCategoryChildTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function CategoryChild({ onAdd, onEdit }) {
+export default function CategoryChild({ onAdd, onEdit, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -85,33 +85,40 @@ export default function CategoryChild({ onAdd, onEdit }) {
             <TableHeaderEntry title="Main Category" />
             <TableHeaderEntry title="Parent Category" />
           </div>
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
-          <SubCategoryChildTableEntry onEdit={onEdit} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <SubCategoryChildTableEntry onEdit={onEdit} onDelete={onDelete} />
         </div>
       </div>
     </div>

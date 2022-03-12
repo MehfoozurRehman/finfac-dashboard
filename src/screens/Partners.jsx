@@ -3,7 +3,7 @@ import { Search } from "react-feather";
 import PartnersTableEntry from "../components/PartnersTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Partners({ onAdd, onEdit }) {
+export default function Partners({ onAdd, onEdit, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -39,30 +39,33 @@ export default function Partners({ onAdd, onEdit }) {
             <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
           </div>
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
-          <PartnersTableEntry onEdit={onEdit} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
         </div>
       </div>
     </div>

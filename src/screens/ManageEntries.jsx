@@ -6,7 +6,6 @@ import Toggle from "react-toggle";
 export default function ManageEntries({ heading }) {
   const navigate = useNavigate();
   const { state } = useLocation();
-  console.log(state);
   const listOfEntries = [
     {
       name: "Add image",

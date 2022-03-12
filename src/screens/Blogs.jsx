@@ -1,10 +1,9 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
 import BlogsTableEntry from "../components/BlogsTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Blogs({ onAdd, onEdit }) {
+export default function Blogs({ onAdd, onEdit, onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -43,33 +42,45 @@ export default function Blogs({ onAdd, onEdit }) {
             <TableHeaderEntry title="Date Created" />
             <TableHeaderEntry title="Catagory" />
           </div>
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
-          <BlogsTableEntry onEdit={onEdit} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
         </div>
       </div>
     </div>

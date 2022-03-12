@@ -3,7 +3,7 @@ import { Search } from "react-feather";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 import UsersTableEntry from "../components/UsersTableEntry";
 
-export default function Users() {
+export default function Users({ onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -33,23 +33,28 @@ export default function Users() {
             <TableHeaderEntry title="Email" />
             <TableHeaderEntry title="Number" />
           </div>
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
-          <UsersTableEntry />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
+          <UsersTableEntry onDelete={onDelete} />
         </div>
       </div>
     </div>

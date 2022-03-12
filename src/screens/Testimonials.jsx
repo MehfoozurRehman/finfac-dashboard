@@ -4,7 +4,7 @@ import TestimonialsTableEntry from "../components/TestimonialsTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 import { useNavigate } from "react-router-dom";
 
-export default function Testimonials({ onAdd, onEdit }) {
+export default function Testimonials({ onDelete }) {
   const navigate = useNavigate();
   return (
     <div className="main">
@@ -49,91 +49,199 @@ export default function Testimonials({ onAdd, onEdit }) {
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
           />
           <TestimonialsTableEntry
             onEdit={() => {
               navigate("/dashboard/testimonials/edit");
             }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <TestimonialsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/testimonials/edit");
+            }}
+            onDelete={onDelete}
           />
         </div>
       </div>

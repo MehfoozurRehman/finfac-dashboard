@@ -1,10 +1,9 @@
 import React from "react";
 import { Search } from "react-feather";
-import { Link } from "react-router-dom";
 import ContactsTableEntry from "../components/ContactsTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Contacts() {
+export default function Contacts({ onDelete }) {
   return (
     <div className="main">
       <div className="main__header">
@@ -35,27 +34,41 @@ export default function Contacts() {
             <TableHeaderEntry title="Subject" />
             <TableHeaderEntry title="Message" />
           </div>
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
-          <ContactsTableEntry />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
+          <ContactsTableEntry onDelete={onDelete} />
         </div>
       </div>
     </div>

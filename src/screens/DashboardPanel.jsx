@@ -1,5 +1,7 @@
 import React from "react";
 import { Lock, Search } from "react-feather";
+import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
+import { useNavigate } from "react-router-dom";
 import {
   Chart as ChartJS,
   ArcElement,
@@ -12,8 +14,6 @@ import {
   CategoryScale,
   BarElement,
 } from "chart.js";
-import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
-import { useNavigate } from "react-router-dom";
 
 export default function DashboardPanel() {
   const navigate = useNavigate();

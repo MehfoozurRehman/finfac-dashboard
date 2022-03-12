@@ -1,8 +1,8 @@
 import React from "react";
-import { Edit, Eye, Trash } from "react-feather";
+import { Eye } from "react-feather";
 import { Link } from "react-router-dom";
 
-export default function CustomersTableEntry() {
+export default function CustomersTableEntry({}) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">

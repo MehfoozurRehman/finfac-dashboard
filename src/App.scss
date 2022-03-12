@@ -492,6 +492,7 @@ body {
   font-weight: bold;
   flex: 1;
   font-size: 14px;
+  text-align: center;
 }
 .dashboard__panel__content__stats__content__value {
   font-size: 20px;
@@ -865,6 +866,11 @@ body {
   margin-top: 3em;
   color: white;
   border: none;
+  cursor: pointer;
+}
+.popup__form__button:hover {
+  transition: 300ms ease-in-out;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
 }
 .css-b62m3t-container {
   width: 100%;
@@ -1089,4 +1095,10 @@ body {
   border-bottom-right-radius: 10px !important;
   box-shadow: none !important;
   background-color: #f9f9ff !important;
+}
+@media (max-width: 1440px) {
+  .dashboard__panel__content__stats__icon {
+    padding: 0.7em 1em;
+    margin-right: 1em;
+  }
 }

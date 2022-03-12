@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import CustomersTableEntry from "../components/CustomersTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Customers() {
+export default function Customers({}) {
   return (
     <div className="main">
       <div className="main__header">

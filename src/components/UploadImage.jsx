@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Plus, X } from "react-feather";
+import { Plus } from "react-feather";
 
 export default function UploadImage({ label }) {
   const [upload, setUpload] = useState("");

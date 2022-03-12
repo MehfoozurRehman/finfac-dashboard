@@ -25,6 +25,7 @@ import ManageEntries from "./screens/ManageEntries";
 import PartnersPopup from "./components/PartnersPopup";
 import BlogsPopup from "./components/BlogsPopup";
 import TestimonialsForm from "./screens/TestimonialsForm";
+import DeleteConfirmation from "./components/DeleteConfirmation";
 
 function Dashboard() {
   return (
@@ -50,9 +51,16 @@ export default function App() {
   const [isAddPartnersPopup, setIsAddPartnersPopup] = useState(false);
   const [isEditBlogsPopup, setIsEditBlogsPopup] = useState(false);
   const [isAddBlogsPopup, setIsAddBlogsPopup] = useState(false);
+  const [isDeleteConfirmation, setIsDeleteConfirmation] = useState(false);
 
   return (
     <>
+      {isDeleteConfirmation ? (
+        <DeleteConfirmation
+          onClose={setIsDeleteConfirmation}
+          onSubmit={setIsDeleteConfirmation}
+        />
+      ) : null}
       {isEditUserRolePopup ? (
         <UserRolePopup
           isEdit
@@ -136,13 +144,17 @@ export default function App() {
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="" element={<DashboardPanel />} />
-          <Route path="users" element={<Users />} />
+          <Route
+            path="users"
+            element={<Users onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="user_role"
             element={
               <UserRole
                 onAdd={setIsAddUserRolePopup}
                 onEdit={setIsEditUserRolePopup}
+                onDelete={setIsDeleteConfirmation}
               />
             }
           />
@@ -152,6 +164,7 @@ export default function App() {
               <Category
                 onAdd={setIsAddCategoryPopup}
                 onEdit={setIsEditCategoryPopup}
+                onDelete={setIsDeleteConfirmation}
               />
             }
           />
@@ -161,6 +174,7 @@ export default function App() {
               <SubCategory
                 onAdd={setIsAddSubCategoryPopup}
                 onEdit={setIsEditSubCategoryPopup}
+                onDelete={setIsDeleteConfirmation}
               />
             }
           />
@@ -170,48 +184,84 @@ export default function App() {
               <CategoryChild
                 onAdd={setIsAddSubCategoryChildPopup}
                 onEdit={setIsEditSubCategoryChildPopup}
+                onDelete={setIsDeleteConfirmation}
               />
             }
           />
           <Route
             path="invest_money/mutual_funds"
-            element={<Loan heading="Mutual Funds" />}
+            element={
+              <Loan heading="Mutual Funds" onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="invest_money/national_savings"
-            element={<Loan heading="National Savings" />}
+            element={
+              <Loan
+                heading="National Savings"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="need_money/credit_card"
-            element={<Loan heading="Credit Card" />}
+            element={
+              <Loan heading="Credit Card" onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="need_money/auto_loan"
-            element={<Loan heading="Auto Loan" />}
+            element={
+              <Loan heading="Auto Loan" onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="need_money/car_loans"
-            element={<Loan heading="Car Loans" />}
+            element={
+              <Loan heading="Car Loans" onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="need_money/home_loans"
-            element={<Loan heading="Home Loans" />}
+            element={
+              <Loan heading="Home Loans" onDelete={setIsDeleteConfirmation} />
+            }
           />
           <Route
             path="protection/health_insurance"
-            element={<Loan heading="Health Insurance" />}
+            element={
+              <Loan
+                heading="Health Insurance"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="protection/life_insurance"
-            element={<Loan heading="Life Insurance" />}
+            element={
+              <Loan
+                heading="Life Insurance"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="protection/travel_insurance"
-            element={<Loan heading="Travel Insurance" />}
+            element={
+              <Loan
+                heading="Travel Insurance"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route
             path="protection/car_insurance"
-            element={<Loan heading="Car Insurance" />}
+            element={
+              <Loan
+                heading="Car Insurance"
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
           />
           <Route path="loan_form/edit" element={<LoanForm heading="Edit" />} />
           <Route
@@ -224,14 +274,24 @@ export default function App() {
           />
           <Route path="customers" element={<Customers />} />
           <Route path="customers/applied" element={<CustomersApplied />} />
-          <Route path="contact" element={<Contacts />} />
+          <Route
+            path="contact"
+            element={<Contacts onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="blogs"
             element={
-              <Blogs onAdd={setIsAddBlogsPopup} onEdit={setIsEditBlogsPopup} />
+              <Blogs
+                onAdd={setIsAddBlogsPopup}
+                onEdit={setIsEditBlogsPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
             }
           />
-          <Route path="testimonials" element={<Testimonials />} />
+          <Route
+            path="testimonials"
+            element={<Testimonials onDelete={setIsDeleteConfirmation} />}
+          />
           <Route
             path="testimonials/add"
             element={<TestimonialsForm heading="Add" />}
@@ -246,6 +306,7 @@ export default function App() {
               <Partners
                 onAdd={setIsAddPartnersPopup}
                 onEdit={setIsEditPartnersPopup}
+                onDelete={setIsDeleteConfirmation}
               />
             }
           />

@@ -1,6 +1,4 @@
 import React from "react";
-import { Edit, Eye, Trash } from "react-feather";
-import { Link } from "react-router-dom";
 
 export default function CustomersAppliedTableEntry() {
   return (
