@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
-import loginSVG from "../assets/loginSvg.svg";
-import CheckBox from "../components/Checkbox";
-import { Link, useNavigate } from "react-router-dom";
+import signupSvg from "../assets/signupSvg.svg";
+import { useNavigate } from "react-router-dom";
 import InputBox from "../components/InputBox";
 
 export default function ForgotPassword() {
@@ -70,8 +69,8 @@ export default function ForgotPassword() {
       </div>
       <div className="auth__container__right">
         <img
-          src={loginSVG}
-          alt="loginSVG"
+          src={signupSvg}
+          alt="signupSvg"
           className="auth__container__right__img"
         />
       </div>
