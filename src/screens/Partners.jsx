@@ -36,8 +36,10 @@ export default function Partners({ onAdd, onEdit, onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
+            <TableHeaderEntry title="Ref" />
             <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Is Featured" />
           </div>
           <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />
           <PartnersTableEntry onEdit={onEdit} onDelete={onDelete} />

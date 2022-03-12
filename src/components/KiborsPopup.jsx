@@ -3,7 +3,7 @@ import { X } from "react-feather";
 import UploadImage from "./UploadImage";
 import Toggle from "react-toggle";
 
-export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
+export default function KiborsPopup({ onClose, onSubmit, isEdit }) {
   return (
     <div className="popup">
       <form className="popup__form">
@@ -15,7 +15,7 @@ export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
           <X size={20} color="currentColor" strokeWidth={4} />
         </button>
         <div className="popup__form__heading">
-          {isEdit ? "Edit" : "Add"} Partner
+          {isEdit ? "Edit" : "Add"} Kibor
         </div>
         <div className="popup__form__row">
           <div className="popup__form__input">
@@ -45,6 +45,17 @@ export default function PartnersPopup({ onClose, onSubmit, isEdit }) {
             <label className="main__content__form__toggle">
               <Toggle defaultChecked={false} icons={false} />
             </label>
+          </div>
+        </div>
+        <div className="popup__form__row">
+          <div className="popup__form__input">
+            <div className="popup__form__input__label">Rate</div>
+            <input
+              type="text"
+              className="popup__form__input__field"
+              placeholder="Enter Rate"
+            />
+            <div className="popup__form__input__error"></div>
           </div>
         </div>
         <div className="popup__form__row">

@@ -29,6 +29,8 @@ import DeleteConfirmation from "./components/DeleteConfirmation";
 import Signup from "./screens/Signup";
 import ChangePassword from "./screens/ChangePassword";
 import ForgotPassword from "./screens/ForgotPassword";
+import Kibors from "./screens/Kibors";
+import KiborsPopup from "./components/KiborsPopup";
 
 function Dashboard() {
   return (
@@ -54,6 +56,8 @@ export default function App() {
   const [isAddPartnersPopup, setIsAddPartnersPopup] = useState(false);
   const [isEditBlogsPopup, setIsEditBlogsPopup] = useState(false);
   const [isAddBlogsPopup, setIsAddBlogsPopup] = useState(false);
+  const [isEditKiborsPopup, setIsEditKiborsPopup] = useState(false);
+  const [isAddKiborsPopup, setIsAddKiborsPopup] = useState(false);
   const [isDeleteConfirmation, setIsDeleteConfirmation] = useState(false);
 
   return (
@@ -140,6 +144,19 @@ export default function App() {
         <BlogsPopup
           onClose={setIsAddBlogsPopup}
           onSubmit={setIsAddBlogsPopup}
+        />
+      ) : null}
+      {isEditKiborsPopup ? (
+        <KiborsPopup
+          isEdit
+          onClose={setIsEditKiborsPopup}
+          onSubmit={setIsEditKiborsPopup}
+        />
+      ) : null}
+      {isAddKiborsPopup ? (
+        <BlogsPopup
+          onClose={setIsAddKiborsPopup}
+          onSubmit={setIsAddKiborsPopup}
         />
       ) : null}
 
@@ -312,6 +329,16 @@ export default function App() {
               <Partners
                 onAdd={setIsAddPartnersPopup}
                 onEdit={setIsEditPartnersPopup}
+                onDelete={setIsDeleteConfirmation}
+              />
+            }
+          />
+          <Route
+            path="kibors"
+            element={
+              <Kibors
+                onAdd={setIsAddKiborsPopup}
+                onEdit={setIsEditKiborsPopup}
                 onDelete={setIsDeleteConfirmation}
               />
             }

@@ -1067,7 +1067,9 @@ body {
 .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
   background-color: #c7c7c7;
 }
-
+.main__content__form__toggle .react-toggle-track {
+  background-color: white;
+}
 // .react-toggle--checked .react-toggle-track {
 //   background-color: #ed263d;
 // }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Edit, Trash } from "react-feather";
 
-export default function PartnersTableEntry({ onEdit, onDelete }) {
+export default function KiborsTableEntry({ onEdit, onDelete }) {
   return (
     <div className="main__content__table__list">
       <div className="main__content__table__list__entry">
@@ -30,6 +30,7 @@ export default function PartnersTableEntry({ onEdit, onDelete }) {
       </div>
       <div className="main__content__table__list__entry">Bilal John</div>
       <div className="main__content__table__list__entry">Yes</div>
+      <div className="main__content__table__list__entry">4.0</div>
     </div>
   );
 }
