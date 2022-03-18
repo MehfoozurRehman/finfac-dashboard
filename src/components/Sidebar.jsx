@@ -661,7 +661,7 @@ export default function Sidebar({}) {
             },
             {
               title: "Protection",
-              to: "/dashboard/health_insurance",
+              to: "/dashboard/health_insurances",
               svg: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -743,7 +743,7 @@ export default function Sidebar({}) {
               child: [
                 {
                   title: "Health Insurance",
-                  to: "/dashboard/health_insurance",
+                  to: "/dashboard/health_insurances",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -763,7 +763,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Life Insurance",
-                  to: "/dashboard/life_insurance",
+                  to: "/dashboard/life_insurances",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -783,7 +783,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Travel Insurance",
-                  to: "/dashboard/travel_insurance",
+                  to: "/dashboard/travel_insurances",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -803,7 +803,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Car Insurance",
-                  to: "/dashboard/car_insurance",
+                  to: "/dashboard/car_insurances",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

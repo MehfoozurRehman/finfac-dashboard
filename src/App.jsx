@@ -19,6 +19,18 @@ import CarLoansManageEntries from "./screens/CarLoansManageEntries";
 import HomeLoans from "./screens/HomeLoans";
 import HomeLoansForm from "./screens/HomeLoansForm";
 import HomeLoansManageEntries from "./screens/HomeLoansManageEntries";
+import HealthInsurancesManageEntries from "./screens/HealthInsurancesManageEntries";
+import HealthInsurancesForm from "./screens/HealthInsurancesForm";
+import HealthInsurances from "./screens/HealthInsurances";
+import LifeInsurances from "./screens/LifeInsurances";
+import LifeInsurancesForm from "./screens/LifeInsurancesForm";
+import LifeInsurancesManageEntries from "./screens/LifeInsurancesManageEntries";
+import CarInsurances from "./screens/CarInsurances";
+import CarInsurancesForm from "./screens/CarInsurancesForm";
+import CarInsurancesManageEntries from "./screens/CarInsurancesManageEntries";
+import TravelInsuracesManageEntries from "./screens/TravelInsuracesManageEntries";
+import TravelInsuraces from "./screens/TravelInsuraces";
+import TravelInsuracesForm from "./screens/TravelInsuracesForm";
 const Category = lazy(() => import("./screens/Category"));
 const CategoryChild = lazy(() => import("./screens/CategoryChild"));
 const Customers = lazy(() => import("./screens/Customers"));
@@ -389,6 +401,102 @@ export default function App() {
             <Route
               path="home_loans/entries"
               element={<HomeLoansManageEntries />}
+            />
+            <Route
+              path="health_insurances"
+              element={
+                <HealthInsurances
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="health_insurances/add"
+              element={<HealthInsurancesForm heading="Health Insurances Add" />}
+            />
+            <Route
+              path="health_insurances/edit"
+              element={
+                <HealthInsurancesForm isEdit heading="Health Insurances Edit" />
+              }
+            />
+            <Route
+              path="health_insurances/entries"
+              element={<HealthInsurancesManageEntries />}
+            />
+            <Route
+              path="life_insurances"
+              element={
+                <LifeInsurances
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="life_insurances/add"
+              element={<LifeInsurancesForm heading="Life Insurances Add" />}
+            />
+            <Route
+              path="life_insurances/edit"
+              element={
+                <LifeInsurancesForm isEdit heading="Life Insurances Edit" />
+              }
+            />
+            <Route
+              path="life_insurances/entries"
+              element={<LifeInsurancesManageEntries />}
+            />
+            <Route
+              path="travel_insurances"
+              element={
+                <TravelInsuraces
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="travel_insurances/add"
+              element={<TravelInsuracesForm heading="Travel Insurances Add" />}
+            />
+            <Route
+              path="travel_insurances/edit"
+              element={
+                <TravelInsuracesForm isEdit heading="Travel Insurances Edit" />
+              }
+            />
+            <Route
+              path="Travel_insurances/entries"
+              element={<TravelInsuracesManageEntries />}
+            />
+            <Route
+              path="car_insurances"
+              element={
+                <CarInsurances
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="car_insurances/add"
+              element={<CarInsurancesForm heading="Car Insurances Add" />}
+            />
+            <Route
+              path="car_insurances/edit"
+              element={
+                <CarInsurancesForm isEdit heading="Car Insurances Edit" />
+              }
+            />
+            <Route
+              path="car_insurances/entries"
+              element={<CarInsurancesManageEntries />}
             />
             //data entries end
             <Route
