@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useState } from "react";
 import { Route, Routes, Outlet } from "react-router-dom";
+import loading from "./assets/loading.gif";
 import "./App.scss";
 const Loan = lazy(() => import("./screens/Loan"));
 const Category = lazy(() => import("./screens/Category"));
@@ -196,7 +197,21 @@ export default function App() {
           onSubmit={setIsAddDailyRatesPopup}
         />
       ) : null}
-      <Suspense fallback={<div>loading</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              width: "100vw",
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img src={loading} alt="loading" />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/sign_up" element={<Signup />} />
