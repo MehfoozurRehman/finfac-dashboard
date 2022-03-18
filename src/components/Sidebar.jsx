@@ -521,7 +521,7 @@ export default function Sidebar({}) {
             },
             {
               title: "Need Money",
-              to: "/dashboard/credit_card",
+              to: "/dashboard/credit_cards",
               svg: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -599,7 +599,7 @@ export default function Sidebar({}) {
               child: [
                 {
                   title: "Credit Card",
-                  to: "/dashboard/credit_card",
+                  to: "/dashboard/credit_cards",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

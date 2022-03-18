@@ -10,6 +10,15 @@ import DeleteConfirmation from "./components/DeleteConfirmation";
 import NationalSavings from "./screens/NationalSavings";
 import NationalSavingsForm from "./screens/NationalSavingsForm";
 import NationalSavingsManageEntries from "./screens/NationalSavingsManageEntries";
+import CreditCards from "./screens/CreditCards";
+import CreditCardsForm from "./screens/CreditCardsForm";
+import CreditCardsManageEntries from "./screens/CreditCardsManageEntries";
+import CarLoans from "./screens/CarLoans";
+import CarLoansForm from "./screens/CarLoansForm";
+import CarLoansManageEntries from "./screens/CarLoansManageEntries";
+import HomeLoans from "./screens/HomeLoans";
+import HomeLoansForm from "./screens/HomeLoansForm";
+import HomeLoansManageEntries from "./screens/HomeLoansManageEntries";
 const Category = lazy(() => import("./screens/Category"));
 const CategoryChild = lazy(() => import("./screens/CategoryChild"));
 const Customers = lazy(() => import("./screens/Customers"));
@@ -268,6 +277,7 @@ export default function App() {
                 />
               }
             />
+            //data entries start
             <Route
               path="mutual_funds"
               element={
@@ -314,6 +324,73 @@ export default function App() {
               path="national_savings/entries"
               element={<NationalSavingsManageEntries />}
             />
+            <Route
+              path="credit_cards"
+              element={
+                <CreditCards
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="credit_cards/add"
+              element={<CreditCardsForm heading="Credit Cards Add" />}
+            />
+            <Route
+              path="credit_cards/edit"
+              element={<CreditCardsForm isEdit heading="Credit Cards Edit" />}
+            />
+            <Route
+              path="credit_cards/entries"
+              element={<CreditCardsManageEntries />}
+            />
+            <Route
+              path="car_loans"
+              element={
+                <CarLoans
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="car_loans/add"
+              element={<CarLoansForm heading="Car Loans Add" />}
+            />
+            <Route
+              path="car_loans/edit"
+              element={<CarLoansForm isEdit heading="Car Loans Edit" />}
+            />
+            <Route
+              path="car_loans/entries"
+              element={<CarLoansManageEntries />}
+            />
+            <Route
+              path="home_loans"
+              element={
+                <HomeLoans
+                  onDelete={() => {
+                    setIsDeleteConfirmation(true);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="home_loans/add"
+              element={<HomeLoansForm heading="Home Loans Add" />}
+            />
+            <Route
+              path="home_loans/edit"
+              element={<HomeLoansForm isEdit heading="Home Loans Edit" />}
+            />
+            <Route
+              path="home_loans/entries"
+              element={<HomeLoansManageEntries />}
+            />
+            //data entries end
             <Route
               path="manage_entries"
               element={<ManageEntries heading="Manage Entries" />}
