@@ -2,11 +2,10 @@ import React, { lazy, Suspense, useState } from "react";
 import { Route, Routes, Outlet } from "react-router-dom";
 import loading from "./assets/loading.gif";
 import "./App.scss";
+
 import MutualFunds from "./screens/MutualFunds";
 import MutualFundsForm from "./screens/MutualFundsForm";
 import MutualFundsManageEntries from "./screens/MutualFundsManageEntries";
-
-import DeleteConfirmation from "./components/DeleteConfirmation";
 import NationalSavings from "./screens/NationalSavings";
 import NationalSavingsForm from "./screens/NationalSavingsForm";
 import NationalSavingsManageEntries from "./screens/NationalSavingsManageEntries";
@@ -31,40 +30,39 @@ import CarInsurancesManageEntries from "./screens/CarInsurancesManageEntries";
 import TravelInsuracesManageEntries from "./screens/TravelInsuracesManageEntries";
 import TravelInsuraces from "./screens/TravelInsuraces";
 import TravelInsuracesForm from "./screens/TravelInsuracesForm";
-const Category = lazy(() => import("./screens/Category"));
-const CategoryChild = lazy(() => import("./screens/CategoryChild"));
-const Customers = lazy(() => import("./screens/Customers"));
-const DashboardPanel = lazy(() => import("./screens/DashboardPanel"));
+import Category from "./screens/Category";
+import SubCategory from "./screens/SubCategory";
+import CategoryChild from "./screens/CategoryChild";
+import Customers from "./screens/Customers";
+import CustomersApplied from "./screens/CustomersApplied";
+import Contacts from "./screens/Contacts";
+import Users from "./screens/Users";
+import UserRole from "./screens/UserRole";
+import Blogs from "./screens/Blogs";
+import Testimonials from "./screens/Testimonials";
+import TestimonialsForm from "./screens/TestimonialsForm";
+import Partners from "./screens/Partners";
+import Kibors from "./screens/Kibors";
+import DailyRates from "./screens/DailyRates";
+import ManageEntries from "./screens/ManageEntries";
+import DashboardPanel from "./screens/DashboardPanel";
+
+import Sidebar from "./components/Sidebar";
+import DeleteConfirmation from "./components/DeleteConfirmation";
+import BanksPopup from "./components/BanksPopup";
+import UserRolePopup from "./components/UserRolePopup";
+import CategoryPopup from "./components/CategoryPopup";
+import SubCategoryPopup from "./components/SubCategoryPopup";
+import SubCategoryChildPopup from "./components/SubCategoryChildPopup";
+import PartnersPopup from "./components/PartnersPopup";
+import BlogsPopup from "./components/BlogsPopup";
+import KiborsPopup from "./components/KiborsPopup";
+import DailyRatesPopup from "./components/DailyRatesPopup";
+
 const Login = lazy(() => import("./screens/Login"));
-const SubCategory = lazy(() => import("./screens/SubCategory"));
-const Sidebar = lazy(() => import("./components/Sidebar"));
-const Users = lazy(() => import("./screens/Users"));
-const UserRole = lazy(() => import("./screens/UserRole"));
-const Contacts = lazy(() => import("./screens/Contacts"));
-const Blogs = lazy(() => import("./screens/Blogs"));
-const Testimonials = lazy(() => import("./screens/Testimonials"));
-const Partners = lazy(() => import("./screens/Partners"));
-const CustomersApplied = lazy(() => import("./screens/CustomersApplied"));
-const UserRolePopup = lazy(() => import("./components/UserRolePopup"));
-const CategoryPopup = lazy(() => import("./components/CategoryPopup"));
-const SubCategoryPopup = lazy(() => import("./components/SubCategoryPopup"));
-const LoanForm = lazy(() => import("./screens/LoanForm"));
-const ManageEntries = lazy(() => import("./screens/ManageEntries"));
-const PartnersPopup = lazy(() => import("./components/PartnersPopup"));
-const BlogsPopup = lazy(() => import("./components/BlogsPopup"));
-const TestimonialsForm = lazy(() => import("./screens/TestimonialsForm"));
 const Signup = lazy(() => import("./screens/Signup"));
 const ChangePassword = lazy(() => import("./screens/ChangePassword"));
 const ForgotPassword = lazy(() => import("./screens/ForgotPassword"));
-const Kibors = lazy(() => import("./screens/Kibors"));
-const KiborsPopup = lazy(() => import("./components/KiborsPopup"));
-const BanksPopup = lazy(() => import("./components/BanksPopup"));
-const DailyRatesPopup = lazy(() => import("./components/DailyRatesPopup"));
-const DailyRates = lazy(() => import("./screens/DailyRates"));
-
-const SubCategoryChildPopup = lazy(() =>
-  import("./components/SubCategoryChildPopup")
-);
 
 function Dashboard() {
   return (
