@@ -400,7 +400,7 @@ export default function Sidebar({}) {
           ]}
         />
         <NavLink
-          to="/dashboard/invest_money/mutual_funds"
+          to="/dashboard/mutual_funds"
           title="Data Entry"
           svg={
             <svg
@@ -421,7 +421,7 @@ export default function Sidebar({}) {
           list={[
             {
               title: "Invest Money",
-              to: "/dashboard/invest_money/mutual_funds",
+              to: "/dashboard/mutual_funds",
               svg: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -479,7 +479,7 @@ export default function Sidebar({}) {
               child: [
                 {
                   title: "Mutual Funds",
-                  to: "/dashboard/invest_money/mutual_funds",
+                  to: "/dashboard/mutual_funds",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +499,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "National Savings",
-                  to: "/dashboard/invest_money/national_savings",
+                  to: "/dashboard/national_savings",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -521,7 +521,7 @@ export default function Sidebar({}) {
             },
             {
               title: "Need Money",
-              to: "/dashboard/need_money/credit_card",
+              to: "/dashboard/credit_card",
               svg: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -599,7 +599,7 @@ export default function Sidebar({}) {
               child: [
                 {
                   title: "Credit Card",
-                  to: "/dashboard/need_money/credit_card",
+                  to: "/dashboard/credit_card",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -619,7 +619,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Car Loans",
-                  to: "/dashboard/need_money/car_loans",
+                  to: "/dashboard/car_loans",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -639,7 +639,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Home Loans",
-                  to: "/dashboard/need_money/home_loans",
+                  to: "/dashboard/home_loans",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -661,7 +661,7 @@ export default function Sidebar({}) {
             },
             {
               title: "Protection",
-              to: "/dashboard/protection/health_insurance",
+              to: "/dashboard/health_insurance",
               svg: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -743,7 +743,7 @@ export default function Sidebar({}) {
               child: [
                 {
                   title: "Health Insurance",
-                  to: "/dashboard/protection/health_insurance",
+                  to: "/dashboard/health_insurance",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -763,7 +763,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Life Insurance",
-                  to: "/dashboard/protection/life_insurance",
+                  to: "/dashboard/life_insurance",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -783,7 +783,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Travel Insurance",
-                  to: "/dashboard/protection/travel_insurance",
+                  to: "/dashboard/travel_insurance",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -803,7 +803,7 @@ export default function Sidebar({}) {
                 },
                 {
                   title: "Car Insurance",
-                  to: "/dashboard/protection/car_insurance",
+                  to: "/dashboard/car_insurance",
                   svg: (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 import React from "react";
 import { X } from "react-feather";
 
-export default function DeleteConfirmation({ onClose, onSubmit, isEdit }) {
+export default function DeleteConfirmation({ onClose, onSubmit }) {
   return (
     <div className="popup">
       <form className="popup__form">
