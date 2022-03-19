@@ -36,7 +36,7 @@ function NationalSavingsTableEntry({ onEdit, onDelete }) {
       <div className="main__content__table__list__entry">Rate - %</div>
       <div className="main__content__table__list__entry">Time Period</div>
       <div className="main__content__table__list__entry">Profit Paid</div>
-      <div className="main__content__table__list__entry">Lock in Period"</div>
+      <div className="main__content__table__list__entry">Lock in Period</div>
       <div className="main__content__table__list__entry">Early encashment</div>
       <div className="main__content__table__list__entry">Zakat Deduction</div>
       <div className="main__content__table__list__entry">WHT on Profit - %</div>
