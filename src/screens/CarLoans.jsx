@@ -1,8 +1,72 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function CarLoansTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">Is Featured</div>
+      <div className="main__content__table__list__entry">Type</div>
+      <div className="main__content__table__list__entry">
+        Minimum Down Payment
+      </div>
+      <div className="main__content__table__list__entry">Rate Category</div>
+      <div className="main__content__table__list__entry">Kibor -Dropdown</div>
+      <div className="main__content__table__list__entry">Spread</div>
+      <div className="main__content__table__list__entry">Insurance Rate</div>
+      <div className="main__content__table__list__entry">Processing Fee</div>
+      <div className="main__content__table__list__entry">Application Fee</div>
+      <div className="main__content__table__list__entry">Tracker Charges</div>
+      <div className="main__content__table__list__entry">Registration Cost</div>
+      <div className="main__content__table__list__entry">
+        Late Payment Charges
+      </div>
+      <div className="main__content__table__list__entry">Baloon Payment</div>
+      <div className="main__content__table__list__entry">
+        Baloon Payment Charges
+      </div>
+      <div className="main__content__table__list__entry">Prepayment</div>
+      <div className="main__content__table__list__entry">
+        Prepayment Charges
+      </div>
+      <div className="main__content__table__list__entry">Ownership</div>
+      <div className="main__content__table__list__entry">
+        Deferred instalment facility
+      </div>
+      <div className="main__content__table__list__entry">
+        Who will bear registration cost?
+      </div>
+      <div className="main__content__table__list__entry">Occupation</div>
+    </div>
+  );
+}
 
 export default function CarLoans({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +145,168 @@ export default function CarLoans({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Type" />
+            <TableHeaderEntry title="Minimum Down Payment" />
+            <TableHeaderEntry title="Rate Category" />
+            <TableHeaderEntry title="Kibor -Dropdown" />
+            <TableHeaderEntry title="Spread" />
+            <TableHeaderEntry title="Insurance Rate" />
+            <TableHeaderEntry title="Processing Fee" />
+            <TableHeaderEntry title="Application Fee" />
+            <TableHeaderEntry title="Tracker Charges" />
+            <TableHeaderEntry title="Registration Cost" />
+            <TableHeaderEntry title="Late Payment Charges" />
+            <TableHeaderEntry title="Baloon Payment" />
+            <TableHeaderEntry title="Baloon Payment Charges" />
+            <TableHeaderEntry title="Prepayment" />
+            <TableHeaderEntry title="Prepayment Charges" />
+            <TableHeaderEntry title="Ownership" />
+            <TableHeaderEntry title="Deferred instalment facility" />
+            <TableHeaderEntry title="Who will bear registration cost?" />
+            <TableHeaderEntry title="Occupation" />
           </div>
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/car_loans/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/car_loans/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/car_loans/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
+          <CarLoansTableEntry
             onEdit={() => {
               navigate("/dashboard/car_loans/edit");
             }}

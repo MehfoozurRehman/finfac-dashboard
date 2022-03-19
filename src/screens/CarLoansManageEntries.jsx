@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function CarLoansManageEntries({ heading }) {
@@ -8,103 +8,95 @@ export default function CarLoansManageEntries({ heading }) {
   const listOfEntries = [
     {
       name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Name",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Type",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Minimum Down Payment",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Rate Category",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Kibor -Dropdown",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
+      name: "Spread",
+      default: true,
     },
     {
-      name: "Ref",
-      default: false,
+      name: "Insurance Rate",
+      default: true,
+    },
+    {
+      name: "Processing Fee",
+      default: true,
+    },
+    {
+      name: "Application Fee",
+      default: true,
+    },
+    {
+      name: "Tracker Charges",
+      default: true,
+    },
+    {
+      name: "Registration Cost",
+      default: true,
+    },
+    {
+      name: "Late Payment Charges",
+      default: true,
+    },
+    {
+      name: "Baloon Payment",
+      default: true,
+    },
+    {
+      name: "Baloon Payment Charges",
+      default: true,
+    },
+    {
+      name: "Prepayment",
+      default: true,
+    },
+    {
+      name: "Prepayment Charges",
+      default: true,
+    },
+    {
+      name: "Ownership",
+      default: true,
+    },
+    {
+      name: "Deferred instalment facility",
+      default: true,
+    },
+    {
+      name: "Who will bear registration cost?",
+      default: true,
+    },
+    {
+      name: "Occupation",
+      default: true,
     },
   ];
   return (
@@ -136,7 +128,7 @@ export default function CarLoansManageEntries({ heading }) {
             <div key={i} className="main__content__form__col">
               <label className="main__content__form__toggle">
                 <span>{item.name}</span>
-                <Toggle defaultChecked={item.default} icons={false} />
+                <Toggle defaultChecked={item.default} icons={true} />
               </label>
             </div>
           ))}
