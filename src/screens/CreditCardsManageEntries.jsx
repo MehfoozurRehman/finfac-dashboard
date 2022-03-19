@@ -1,110 +1,98 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function CreditCardsManageEntries({ heading }) {
   const navigate = useNavigate();
   const listOfEntries = [
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Name",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Image",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Interest Rate - %",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Annual Fee",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Waiver of Annual Fee",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
-      default: false,
-    },
-    {
-      name: "Add image",
+      name: "Chip Maintenance",
       default: true,
     },
     {
-      name: "Add image",
-      default: false,
+      name: "Late Payment Fee",
+      default: true,
     },
     {
-      name: "Add image",
-      default: false,
+      name: "Cash Advance Facility",
+      default: true,
+    },
+    {
+      name: "Cash Advance Rate - %",
+      default: true,
+    },
+    {
+      name: "Cash Advance Fee",
+      default: true,
+    },
+    {
+      name: "Balance Transfer Rate - %",
+      default: true,
+    },
+    {
+      name: "Balance Transfer Chargers",
+      default: true,
+    },
+    {
+      name: "Card Type",
+      default: true,
+    },
+    {
+      name: "Time period required for waiver",
+      default: true,
+    },
+    {
+      name: "Interest Free Period - Days",
+      default: true,
+    },
+    {
+      name: "Balance Transfer Facility",
+      default: true,
+    },
+    {
+      name: "Foreign Transaction Fee",
+      default: true,
+    },
+    {
+      name: "Reward Points",
+      default: true,
+    },
+    {
+      name: "Zero Loss Liability",
+      default: true,
+    },
+    {
+      name: "SMS Charges",
+      default: true,
     },
   ];
   return (
@@ -136,7 +124,7 @@ export default function CreditCardsManageEntries({ heading }) {
             <div key={i} className="main__content__form__col">
               <label className="main__content__form__toggle">
                 <span>{item.name}</span>
-                <Toggle defaultChecked={item.default} icons={false} />
+                <Toggle defaultChecked={item.default} icons={true} />
               </label>
             </div>
           ))}

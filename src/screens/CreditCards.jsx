@@ -1,8 +1,78 @@
 import React from "react";
-import { Search } from "react-feather";
+import { Edit, Search, Trash } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+
+function CreditCardsTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">Is Featured</div>
+      <div className="main__content__table__list__entry">Interest Rate - %</div>
+      <div className="main__content__table__list__entry">Annual Fee</div>
+      <div className="main__content__table__list__entry">
+        Waiver of Annual Fee
+      </div>
+      <div className="main__content__table__list__entry">Chip Maintenance</div>
+      <div className="main__content__table__list__entry">Late Payment Fee</div>
+      <div className="main__content__table__list__entry">
+        Cash Advance Facility
+      </div>
+      <div className="main__content__table__list__entry">
+        Cash Advance Rate - %
+      </div>
+      <div className="main__content__table__list__entry">Cash Advance Fee</div>
+      <div className="main__content__table__list__entry">
+        Balance Transfer Rate - %
+      </div>
+      <div className="main__content__table__list__entry">
+        Balance Transfer Chargers
+      </div>
+      <div className="main__content__table__list__entry">Card Type</div>
+      <div className="main__content__table__list__entry">
+        Time period required for waiver
+      </div>
+      <div className="main__content__table__list__entry">
+        Interest Free Period - Days
+      </div>
+      <div className="main__content__table__list__entry">
+        Balance Transfer Facility
+      </div>
+      <div className="main__content__table__list__entry">
+        Foreign Transaction Fee
+      </div>
+      <div className="main__content__table__list__entry">Reward Points</div>
+      <div className="main__content__table__list__entry">
+        Zero Loss Liability
+      </div>
+      <div className="main__content__table__list__entry">SMS Charges</div>
+    </div>
+  );
+}
 
 export default function CreditCards({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +151,161 @@ export default function CreditCards({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Interest Rate - %" />
+            <TableHeaderEntry title="Annual Fee" />
+            <TableHeaderEntry title="Waiver of Annual Fee" />
+            <TableHeaderEntry title="Chip Maintenance" />
+            <TableHeaderEntry title="Late Payment Fee" />
+            <TableHeaderEntry title="Cash Advance Facility" />
+            <TableHeaderEntry title="Cash Advance Rate - %" />
+            <TableHeaderEntry title="Cash Advance Fee" />
+            <TableHeaderEntry title="Balance Transfer Rate - %" />
+            <TableHeaderEntry title="Balance Transfer Chargers" />
+            <TableHeaderEntry title="Card Type" />
+            <TableHeaderEntry title="Time period required for waiver" />
+            <TableHeaderEntry title="Interest Free Period - Days" />
+            <TableHeaderEntry title="Balance Transfer Facility" />
+            <TableHeaderEntry title="Foreign Transaction Fee" />
+            <TableHeaderEntry title="Reward Points" />
+            <TableHeaderEntry title="Zero Loss Liability" />
+            <TableHeaderEntry title="SMS Charges" />
           </div>
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/credit_cards/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/credit_cards/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/credit_cards/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/credit_cards/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
+          <CreditCardsTableEntry
             onEdit={() => {
               navigate("/dashboard/credit_cards/edit");
             }}

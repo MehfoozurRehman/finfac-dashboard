@@ -59,10 +59,19 @@ export default function TravelInsuracesForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
-            <Select />
+            <Select
+              error=""
+              isMulti={true}
+              label="hello"
+              options={[
+                { value: "chocolate", label: "Chocolate" },
+                { value: "strawberry", label: "Strawberry" },
+                { value: "vanilla", label: "Vanilla" },
+              ]}
+            />
           </div>
           <div className="main__content__form__col">
-            <Input />
+            <Input error="" label="hello" placeholder="hey" type="text" />
           </div>
         </div>
       </div>

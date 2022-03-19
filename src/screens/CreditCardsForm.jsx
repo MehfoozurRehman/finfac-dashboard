@@ -59,10 +59,166 @@ export default function CreditCardsForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
-            <Select />
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
           </div>
           <div className="main__content__form__col">
-            <Input />
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Interest Rate - %"
+              placeholder="Interest Rate - %"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Annual Fee"
+              placeholder="Annual Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Waiver of Annual Fee"
+              placeholder="Waiver of Annual Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Chip Maintenance"
+              placeholder="Chip Maintenance"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Late Payment Fee"
+              placeholder="Late Payment Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Cash Advance Facility"
+              placeholder="Cash Advance Facility"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Cash Advance Rate - %"
+              placeholder="Cash Advance Rate - %"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Cash Advance Fee"
+              placeholder="Cash Advance Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Balance Transfer Rate - %"
+              placeholder="Balance Transfer Rate - %"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Balance Transfer Chargers"
+              placeholder="Balance Transfer Chargers"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Card Type"
+              options={[
+                { value: "Platinum", label: "Platinum" },
+                { value: "Gold", label: "Gold" },
+                { value: "Classic", label: "Classic" },
+                { value: "Travel", label: "Travel" },
+                { value: "Reward", label: "Reward" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Time period required for waiver"
+              placeholder="Time period required for waiver"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Interest Free Period - Days"
+              placeholder="Interest Free Period - Days"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Balance Transfer Facility"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Foreign Transaction Fee"
+              placeholder="Foreign Transaction Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Reward Points"
+              placeholder="Reward Points"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Zero Loss Liability"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="SMS Charges"
+              placeholder="SMS Charges"
+              type="text"
+            />
           </div>
         </div>
       </div>

@@ -7,103 +7,103 @@ export default function TravelInsuracesManageEntries({ heading }) {
   const navigate = useNavigate();
   const listOfEntries = [
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
   ];

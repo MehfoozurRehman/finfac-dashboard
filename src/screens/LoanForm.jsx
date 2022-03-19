@@ -1,9 +1,10 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import Select from "react-select";
 import UploadImage from "../components/UploadImage";
 import Toggle from "react-toggle";
 import { useLocation, useNavigate } from "react-router-dom";
+import Select from "../components/Select";
+import Input from "../components/Input";
 
 export default function LoanForm({ heading }) {
   const navigate = useNavigate();
@@ -51,43 +52,21 @@ export default function LoanForm({ heading }) {
               <Toggle defaultChecked={false} icons={false} />
             </label>
           </div>
-          {state.map((item) =>
-            item.type === "select" ? (
-              <div className="main__content__form__col">
-                <div className="popup__form__input">
-                  <div className="popup__form__input__label">{item.label}</div>
-                  <Select
-                    options={[item.options]}
-                    theme={(theme) => ({
-                      ...theme,
-
-                      colors: {
-                        ...theme.colors,
-                        primary25: "#f6f6f6",
-                        primary: "#ed263d",
-                        primary50: "f6f6f6",
-                      },
-                    })}
-                    isMulti
-                    placeholder={"Enter " + item.label}
-                  />
-                  <div className="popup__form__input__error"></div>
-                </div>
-              </div>
-            ) : (
-              <div className="main__content__form__col">
-                <div className="popup__form__input">
-                  <div className="popup__form__input__label">{item.label}</div>
-                  <input
-                    type="text"
-                    className="popup__form__input__field"
-                    placeholder={"Enter " + item.label}
-                  />
-                  <div className="popup__form__input__error"></div>
-                </div>
-              </div>
-            )
-          )}
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={true}
+              label="hello"
+              options={[
+                { value: "chocolate", label: "Chocolate" },
+                { value: "strawberry", label: "Strawberry" },
+                { value: "vanilla", label: "Vanilla" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="hello" placeholder="hey" type="text" />
+          </div>
         </div>
       </div>
     </div>

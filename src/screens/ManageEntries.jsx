@@ -8,103 +8,103 @@ export default function ManageEntries({ heading }) {
   const { state } = useLocation();
   const listOfEntries = [
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: true,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
     {
-      name: "Add image",
+      name: "Ref",
       default: false,
     },
   ];
