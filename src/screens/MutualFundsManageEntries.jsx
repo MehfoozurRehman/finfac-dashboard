@@ -11,99 +11,87 @@ export default function MutualFundsManageEntries({ heading }) {
       default: false,
     },
     {
-      name: "Ref",
+      name: "Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: false,
     },
     {
-      name: "Ref",
+      name: "is Featured",
       default: true,
     },
     {
-      name: "Ref",
+      name: "AMC rating",
       default: false,
     },
     {
-      name: "Ref",
+      name: "AUM - Billion",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Sahriah compliant option",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Web portal and App",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Online Account opening",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Online Investment",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Debit Card",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Interbank Fund Transfer",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Additional Coverage - Insurance",
       default: false,
     },
     {
-      name: "Ref",
+      name: "WhatsApp Service",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Fund Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "30 Days",
       default: false,
     },
     {
-      name: "Ref",
+      name: "90 Days",
       default: false,
     },
     {
-      name: "Ref",
+      name: "365 Days",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Fund Name",
       default: true,
     },
     {
-      name: "Ref",
+      name: "1 year",
       default: false,
     },
     {
-      name: "Ref",
+      name: "3 year",
       default: false,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "5 year",
       default: false,
     },
   ];

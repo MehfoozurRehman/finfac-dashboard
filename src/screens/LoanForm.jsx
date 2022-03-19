@@ -55,7 +55,7 @@ export default function LoanForm({ heading }) {
           <div className="main__content__form__col">
             <Select
               error=""
-              isMulti={true}
+              isMulti={false}
               label="hello"
               options={[
                 { value: "chocolate", label: "Chocolate" },

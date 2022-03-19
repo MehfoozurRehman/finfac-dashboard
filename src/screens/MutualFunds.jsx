@@ -1,8 +1,69 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function MutualFundsTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">is Featured</div>
+      <div className="main__content__table__list__entry">AMC rating</div>
+      <div className="main__content__table__list__entry">AUM - Billion</div>
+      <div className="main__content__table__list__entry">
+        Sahriah compliant option
+      </div>
+      <div className="main__content__table__list__entry">
+        Web portal and App
+      </div>
+      <div className="main__content__table__list__entry">
+        Online Account opening
+      </div>
+      <div className="main__content__table__list__entry">Online Investment</div>
+      <div className="main__content__table__list__entry">Debit Card</div>
+      <div className="main__content__table__list__entry">
+        Interbank Fund Transfer
+      </div>
+      <div className="main__content__table__list__entry">
+        Additional Coverage - Insurance
+      </div>
+      <div className="main__content__table__list__entry">WhatsApp Service</div>
+      <div className="main__content__table__list__entry">Fund Name</div>
+      <div className="main__content__table__list__entry">30 Days</div>
+      <div className="main__content__table__list__entry">90 Days</div>
+      <div className="main__content__table__list__entry">365 Days</div>
+      <div className="main__content__table__list__entry">Fund Name</div>
+      <div className="main__content__table__list__entry">1 year</div>
+      <div className="main__content__table__list__entry">3 year</div>
+      <div className="main__content__table__list__entry">5 year</div>
+    </div>
+  );
+}
 
 export default function MutualFunds({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +142,179 @@ export default function MutualFunds({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="is Featured" />
+            <TableHeaderEntry title="AMC rating" />
+            <TableHeaderEntry title="AUM - Billion" />
+            <TableHeaderEntry title="Sahriah compliant option" />
+            <TableHeaderEntry title="Web portal and App" />
+            <TableHeaderEntry title="Online Account opening" />
+            <TableHeaderEntry title="Online Investment" />
+            <TableHeaderEntry title="Debit Card" />
+            <TableHeaderEntry title="Interbank Fund Transfer" />
+            <TableHeaderEntry title="Additional Coverage - Insurance" />
+            <TableHeaderEntry title="WhatsApp Service" />
+            <TableHeaderEntry title="Fund Name" />
+            <TableHeaderEntry title="30 Days" />
+            <TableHeaderEntry title="90 Days" />
+            <TableHeaderEntry title="365 Days" />
+            <TableHeaderEntry title="Fund Name" />
+            <TableHeaderEntry title="1 year" />
+            <TableHeaderEntry title="3 year" />
+            <TableHeaderEntry title="5 year" />
           </div>
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/mutual_funds/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
+          <MutualFundsTableEntry
             onEdit={() => {
               navigate("/dashboard/mutual_funds/edit");
             }}

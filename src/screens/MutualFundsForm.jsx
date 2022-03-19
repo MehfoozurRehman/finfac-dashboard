@@ -59,19 +59,153 @@ export default function MutualFundsForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="AMC rating"
+              placeholder="AMC rating"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="AUM - Billion"
+              placeholder="AUM - Billion"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
             <Select
               error=""
-              isMulti={true}
-              label="hello"
+              isMulti={false}
+              label="Sahriah compliant option"
               options={[
-                { value: "chocolate", label: "Chocolate" },
-                { value: "strawberry", label: "Strawberry" },
-                { value: "vanilla", label: "Vanilla" },
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
               ]}
             />
           </div>
           <div className="main__content__form__col">
-            <Input error="" label="hello" placeholder="hey" type="text" />
+            <Select
+              error=""
+              isMulti={false}
+              label="Web portal and App"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Online Account opening"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Online Investment"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Debit Card"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Interbank Fund Transfer"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Additional Coverage - Insurance"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="WhatsApp Service"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Fund Name"
+              placeholder="Fund Name"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="30 Days" placeholder="30 Days" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="90 Days" placeholder="90 Days" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="365 Days"
+              placeholder="365 Days"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Fund Name"
+              placeholder="Fund Name"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="1 year" placeholder="1 year" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="3 year" placeholder="3 year" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="5 year" placeholder="5 year" type="text" />
           </div>
         </div>
       </div>
