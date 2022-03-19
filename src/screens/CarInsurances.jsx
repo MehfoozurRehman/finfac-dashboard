@@ -1,8 +1,81 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function CarInsurancesTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">Is Featured</div>
+      <div className="main__content__table__list__entry">Insurance Rate -%</div>
+      <div className="main__content__table__list__entry">Tracker Option</div>
+      <div className="main__content__table__list__entry">
+        Accidental Damages
+      </div>
+      <div className="main__content__table__list__entry">Fire</div>
+      <div className="main__content__table__list__entry">Total Loss</div>
+      <div className="main__content__table__list__entry">Theft/Snatch</div>
+      <div className="main__content__table__list__entry">
+        Natural Calamities
+      </div>
+      <div className="main__content__table__list__entry">Riots and Strike</div>
+      <div className="main__content__table__list__entry">Terrorism</div>
+      <div className="main__content__table__list__entry">Deductible</div>
+      <div className="main__content__table__list__entry">No Claim Discount</div>
+      <div className="main__content__table__list__entry">
+        Death Bodily Injury
+      </div>
+      <div className="main__content__table__list__entry">Property Damages</div>
+      <div className="main__content__table__list__entry">
+        Emergency Medical Expenses
+      </div>
+      <div className="main__content__table__list__entry">
+        Call Centre Support
+      </div>
+      <div className="main__content__table__list__entry">
+        In-House Surveyors
+      </div>
+      <div className="main__content__table__list__entry">
+        Replacement at Doorstep
+      </div>
+      <div className="main__content__table__list__entry">Mobile App</div>
+      <div className="main__content__table__list__entry">
+        Self-Assessment at approved dealership
+      </div>
+      <div className="main__content__table__list__entry">Make</div>
+      <div className="main__content__table__list__entry">Model</div>
+      <div className="main__content__table__list__entry">
+        Year of Manufacturing
+      </div>
+    </div>
+  );
+}
 
 export default function CarInsurances({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +154,207 @@ export default function CarInsurances({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Insurance Rate -%" />
+            <TableHeaderEntry title="Tracker Option" />
+            <TableHeaderEntry title="Accidental Damages" />
+            <TableHeaderEntry title="Fire" />
+            <TableHeaderEntry title="Total Loss" />
+            <TableHeaderEntry title="Theft/Snatch" />
+            <TableHeaderEntry title="Natural Calamities" />
+            <TableHeaderEntry title="Riots and Strike" />
+            <TableHeaderEntry title="Terrorism" />
+            <TableHeaderEntry title="Deductible" />
+            <TableHeaderEntry title="No Claim Discount" />
+            <TableHeaderEntry title="Death Bodily Injury" />
+            <TableHeaderEntry title="Property Damages" />
+            <TableHeaderEntry title="Emergency Medical Expenses" />
+            <TableHeaderEntry title="Call Centre Support" />
+            <TableHeaderEntry title="In-House Surveyors" />
+            <TableHeaderEntry title="Replacement at Doorstep" />
+            <TableHeaderEntry title="Mobile App" />
+            <TableHeaderEntry title="Self-Assessment at approved dealership" />
+            <TableHeaderEntry title="Make" />
+            <TableHeaderEntry title="Model" />
+            <TableHeaderEntry title="Year of Manufacturing" />
           </div>
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <CarInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/car_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <CarInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/car_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <CarInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/car_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <CarInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/car_insurances/edit");
             }}

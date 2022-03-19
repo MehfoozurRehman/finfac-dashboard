@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function CarInsurancesManageEntries({ heading }) {
@@ -11,99 +11,103 @@ export default function CarInsurancesManageEntries({ heading }) {
       default: false,
     },
     {
-      name: "Ref",
+      name: "Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Insurance Rate -%",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Tracker Option",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Accidental Damages",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Fire",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Total Loss",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Theft/Snatch",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Natural Calamities",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Riots and Strike",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Terrorism",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Deductible",
       default: true,
     },
     {
-      name: "Ref",
+      name: "No Claim Discount",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Death Bodily Injury",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Property Damages",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Emergency Medical Expenses",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Call Centre Support",
       default: true,
     },
     {
-      name: "Ref",
+      name: "In-House Surveyors",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Replacement at Doorstep",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Mobile App",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Self-Assessment at approved dealership",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Make",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Model",
+      default: false,
+    },
+    {
+      name: "Year of Manufacturing",
       default: false,
     },
   ];
