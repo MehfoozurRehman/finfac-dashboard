@@ -1,9 +1,11 @@
 import React from "react";
 import { Search } from "react-feather";
+import { useNavigate } from "react-router-dom";
 import BlogsTableEntry from "../components/BlogsTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
 
-export default function Blogs({ onAdd, onEdit, onDelete }) {
+export default function Blogs({ onDelete }) {
+  const navigate = useNavigate();
   return (
     <div className="main">
       <div className="main__header">
@@ -12,7 +14,9 @@ export default function Blogs({ onAdd, onEdit, onDelete }) {
           <div className="main__header__top__buttons">
             <button
               className="main__header__top__buttons__button"
-              onClick={onAdd}
+              onClick={() => {
+                navigate("/dashboard/blogs/add");
+              }}
             >
               Add New
             </button>
@@ -42,45 +46,174 @@ export default function Blogs({ onAdd, onEdit, onDelete }) {
             <TableHeaderEntry title="Date Created" />
             <TableHeaderEntry title="Catagory" />
           </div>
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
-          <BlogsTableEntry onEdit={onEdit} onDelete={onDelete} />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
+          <BlogsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/blogs/add");
+            }}
+            onDelete={onDelete}
+          />
         </div>
       </div>
     </div>

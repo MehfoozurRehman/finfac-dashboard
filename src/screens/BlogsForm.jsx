@@ -5,7 +5,7 @@ import UploadImage from "../components/UploadImage";
 import TextArea from "../components/TextArea";
 import { useNavigate } from "react-router-dom";
 
-export default function TestimonialsForm({ heading }) {
+export default function BlogsForm({ heading }) {
   const navigate = useNavigate();
   return (
     <div className="main">
@@ -15,12 +15,12 @@ export default function TestimonialsForm({ heading }) {
             <button
               className="main__header__top__heading__button"
               onClick={() => {
-                navigate("/dashboard/testimonials");
+                navigate("/dashboard/blogs");
               }}
             >
               <ArrowLeft size={20} color="currentColor" />
             </button>
-            {heading} Testimonials
+            {heading} Blog
           </div>
           <div className="main__header__top__buttons">
             <button
@@ -35,7 +35,7 @@ export default function TestimonialsForm({ heading }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate("/dashboard/testimonials");
+                navigate("/dashboard/blogs");
               }}
             >
               {heading === "Add" ? "Add New" : "Save"}

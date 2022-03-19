@@ -58,6 +58,7 @@ import PartnersPopup from "./components/PartnersPopup";
 import BlogsPopup from "./components/BlogsPopup";
 import KiborsPopup from "./components/KiborsPopup";
 import DailyRatesPopup from "./components/DailyRatesPopup";
+import BlogsForm from "./screens/BlogsForm";
 
 const Login = lazy(() => import("./screens/Login"));
 const Signup = lazy(() => import("./screens/Signup"));
@@ -509,14 +510,10 @@ export default function App() {
             />
             <Route
               path="blogs"
-              element={
-                <Blogs
-                  onAdd={setIsAddBlogsPopup}
-                  onEdit={setIsEditBlogsPopup}
-                  onDelete={setIsDeleteConfirmation}
-                />
-              }
+              element={<Blogs onDelete={setIsDeleteConfirmation} />}
             />
+            <Route path="blogs/add" element={<BlogsForm heading="Add" />} />
+            <Route path="blogs/edit" element={<BlogsForm heading="Edit" />} />
             <Route
               path="testimonials"
               element={<Testimonials onDelete={setIsDeleteConfirmation} />}
