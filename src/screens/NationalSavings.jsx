@@ -1,8 +1,50 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function NationalSavingsTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">
+        <img
+          src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          className="main__content__table__list__entry__img"
+        />
+      </div>
+      <div className="main__content__table__list__entry">Is Featured</div>
+      <div className="main__content__table__list__entry">Rate - %</div>
+      <div className="main__content__table__list__entry">Time Period</div>
+      <div className="main__content__table__list__entry">Profit Paid</div>
+      <div className="main__content__table__list__entry">Lock in Period"</div>
+      <div className="main__content__table__list__entry">Early encashment</div>
+      <div className="main__content__table__list__entry">Zakat Deduction</div>
+      <div className="main__content__table__list__entry">WHT on Profit - %</div>
+      <div className="main__content__table__list__entry">Risk Level</div>
+      <div className="main__content__table__list__entry">Investment Limit</div>
+    </div>
+  );
+}
 
 export default function NationalSavings({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +123,206 @@ export default function NationalSavings({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
+            <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Rate - %" />
+            <TableHeaderEntry title="Time Period" />
+            <TableHeaderEntry title="Profit Paid" />
+            <TableHeaderEntry title="Lock in Period" />
+            <TableHeaderEntry title="Early encashment" />
+            <TableHeaderEntry title="Zakat Deduction" />
+            <TableHeaderEntry title="WHT on Profit - %" />
+            <TableHeaderEntry title="Risk Level" />
+            <TableHeaderEntry title="Investment Limit" />
           </div>
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <NationalSavingsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/national_savings/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <NationalSavingsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/national_savings/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <NationalSavingsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/national_savings/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <NationalSavingsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/national_savings/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <NationalSavingsTableEntry
+            onEdit={() => {
+              navigate("/dashboard/national_savings/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <NationalSavingsTableEntry
             onEdit={() => {
               navigate("/dashboard/national_savings/edit");
             }}

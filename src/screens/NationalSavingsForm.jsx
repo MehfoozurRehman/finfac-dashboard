@@ -59,19 +59,88 @@ export default function NationalSavingsForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Rate - %"
+              placeholder="Rate - %"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Time Period"
+              placeholder="Time Period"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Profit Paid"
+              placeholder="Profit Paid"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Lock in Period"
+              placeholder="Lock in Period"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Early encashment"
+              placeholder="Early encashment"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
             <Select
               error=""
               isMulti={false}
-              label="hello"
+              label="Zakat Deduction"
               options={[
-                { value: "chocolate", label: "Chocolate" },
-                { value: "strawberry", label: "Strawberry" },
-                { value: "vanilla", label: "Vanilla" },
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
               ]}
             />
           </div>
           <div className="main__content__form__col">
-            <Input error="" label="hello" placeholder="hey" type="text" />
+            <Input
+              error=""
+              label="WHT on Profit - %"
+              placeholder="WHT on Profit - %"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Risk Level"
+              options={[
+                { value: "High", label: "High" },
+                { value: "Low", label: "Low" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Investment Limit"
+              placeholder="Investment Limit"
+              type="text"
+            />
           </div>
         </div>
       </div>

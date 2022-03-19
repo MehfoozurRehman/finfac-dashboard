@@ -11,99 +11,51 @@ export default function NationalSavingsManageEntries({ heading }) {
       default: false,
     },
     {
-      name: "Ref",
+      name: "Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Rate - %",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Time Period",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Profit Paid",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Lock in Period",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Early encashment",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Zakat Deduction",
       default: false,
     },
     {
-      name: "Ref",
+      name: "WHT on Profit - %",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Risk Level",
       default: false,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Investment Limit",
       default: false,
     },
   ];
