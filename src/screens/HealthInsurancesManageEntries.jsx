@@ -11,99 +11,67 @@ export default function HealthInsurancesManageEntries({ heading }) {
       default: false,
     },
     {
-      name: "Ref",
+      name: "Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Premium",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Room Limit",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Hospitalization Limit",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Accidental Injury treatment",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Hospitalization Costs?",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Expenses before hospitalization?",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Expenses after hospitalization?",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Day care surgery",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Radiotherapy",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Pre-existing conditions",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Waiting period",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Maternity",
       default: false,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Outside Network Reimbursement",
       default: false,
     },
   ];

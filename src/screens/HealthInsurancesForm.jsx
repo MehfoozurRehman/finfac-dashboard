@@ -59,19 +59,112 @@ export default function HealthInsurancesForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Premium" placeholder="Premium" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Room Limit"
+              placeholder="Room Limit"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Hospitalization Limit"
+              placeholder="Hospitalization Limit"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
             <Select
               error=""
               isMulti={false}
-              label="hello"
+              label="Accidental Injury treatment"
               options={[
-                { value: "chocolate", label: "Chocolate" },
-                { value: "strawberry", label: "Strawberry" },
-                { value: "vanilla", label: "Vanilla" },
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
               ]}
             />
           </div>
           <div className="main__content__form__col">
-            <Input error="" label="hello" placeholder="hey" type="text" />
+            <Input
+              error=""
+              label="Hospitalization Costs?"
+              placeholder="Hospitalization Costs?"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Expenses before hospitalization?"
+              placeholder="Expenses before hospitalization?"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Expenses after hospitalization?"
+              placeholder="Expenses after hospitalization?"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Day care surgery"
+              placeholder="Day care surgery"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Radiotherapy"
+              placeholder="Radiotherapy"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Pre-existing conditions"
+              placeholder="Pre-existing conditions"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Waiting period"
+              placeholder="Waiting period"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Maternity"
+              placeholder="Maternity"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Outside Network Reimbursement"
+              placeholder="Outside Network Reimbursement"
+              type="text"
+            />
           </div>
         </div>
       </div>
