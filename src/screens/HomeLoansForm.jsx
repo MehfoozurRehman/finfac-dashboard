@@ -59,19 +59,154 @@ export default function HomeLoansForm({ heading, isEdit }) {
             </label>
           </div>
           <div className="main__content__form__col">
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Minimum down payment"
+              placeholder="Minimum down payment"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
             <Select
               error=""
-              isMulti={true}
-              label="hello"
+              isMulti={false}
+              label="Type"
               options={[
-                { value: "chocolate", label: "Chocolate" },
-                { value: "strawberry", label: "Strawberry" },
-                { value: "vanilla", label: "Vanilla" },
+                { value: "Conventional", label: "Conventional" },
+                { value: "Islamic", label: "Islamic" },
               ]}
             />
           </div>
           <div className="main__content__form__col">
-            <Input error="" label="hello" placeholder="hey" type="text" />
+            <Select
+              error=""
+              isMulti={false}
+              label="Category"
+              options={[
+                { value: "Variable", label: "Variable" },
+                { value: "Fixed", label: "Fixed" },
+                { value: "Hybrid", label: "Hybrid" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="KIBOR -Dropdown"
+              placeholder="KIBOR -Dropdown"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Insurance Rate"
+              placeholder="Insurance Rate"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Processing Fee"
+              placeholder="Processing Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Application Fee"
+              placeholder="Application Fee"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Max Limit -%"
+              placeholder="Max Limit -%"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Late Payment Charges"
+              placeholder="Late Payment Charges"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Baloon Payment"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Baloon Payment Charges"
+              placeholder="Baloon Payment Charges"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Prepayment"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Prepayment Charges"
+              placeholder="Prepayment Charges"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Financing Limit"
+              placeholder="Financing Limit"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Deferred Instalment"
+              placeholder="Deferred Instalment"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Occupation"
+              options={[
+                { value: "Salaried", label: "Salaried" },
+                { value: "Business", label: "Business" },
+              ]}
+            />
           </div>
         </div>
       </div>

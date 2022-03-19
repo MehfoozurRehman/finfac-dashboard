@@ -25,7 +25,7 @@ export default function TestimonialsTableEntry({ onEdit, onDelete }) {
           className="main__content__table__list__entry__img"
         />
       </div>
-      <div className="main__content__table__list__entry">Bilal John</div>
+      <div className="main__content__table__list__entry">Bilal</div>
 
       <div className="main__content__table__list__entry">Product Manager</div>
       <div className="main__content__table__list__entry">4.0</div>

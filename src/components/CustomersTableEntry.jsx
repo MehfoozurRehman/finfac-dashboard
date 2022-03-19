@@ -20,7 +20,7 @@ export default function CustomersTableEntry({}) {
           className="main__content__table__list__entry__img"
         />
       </div>
-      <div className="main__content__table__list__entry">Bilal John</div>
+      <div className="main__content__table__list__entry">Bilal</div>
       <div className="main__content__table__list__entry">Male</div>
       <div className="main__content__table__list__entry">20000000</div>
       <div className="main__content__table__list__entry">Developer</div>

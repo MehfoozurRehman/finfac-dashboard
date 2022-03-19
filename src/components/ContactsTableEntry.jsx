@@ -12,7 +12,7 @@ export default function ContactsTableEntry({ onDelete }) {
           <Trash size={20} color="currentColor" strokeWidth={1} />
         </button>
       </div>
-      <div className="main__content__table__list__entry">Bilal John</div>
+      <div className="main__content__table__list__entry">Bilal</div>
       <div className="main__content__table__list__entry">Bilal@gmail.com</div>
       <div className="main__content__table__list__entry">Work with you</div>
       <div className="main__content__table__list__entry">

@@ -8,103 +8,83 @@ export default function HomeLoansManageEntries({ heading }) {
   const listOfEntries = [
     {
       name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Name",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Image",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Is Featured",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Minimum down payment",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Type",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Category",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "KIBOR -Dropdown",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
+      name: "Spread",
+      default: true,
     },
     {
-      name: "Ref",
-      default: false,
+      name: "Insurance Rate",
+      default: true,
+    },
+    {
+      name: "Processing Fee",
+      default: true,
+    },
+    {
+      name: "Application Fee",
+      default: true,
+    },
+    {
+      name: "Max Limit -%",
+      default: true,
+    },
+    {
+      name: "Late Payment Charges",
+      default: true,
+    },
+    {
+      name: "Baloon Payment",
+      default: true,
+    },
+    {
+      name: "Prepayment",
+      default: true,
+    },
+    {
+      name: "Prepayment Charges",
+      default: true,
+    },
+    {
+      name: "Financing Limit",
+      default: true,
+    },
+    {
+      name: "Deferred Instalment",
+      default: true,
+    },
+    {
+      name: "Occupation",
+      default: true,
     },
   ];
   return (
@@ -136,7 +116,7 @@ export default function HomeLoansManageEntries({ heading }) {
             <div key={i} className="main__content__form__col">
               <label className="main__content__form__toggle">
                 <span>{item.name}</span>
-                <Toggle defaultChecked={item.default} icons={false} />
+                <Toggle defaultChecked={item.default} icons={true} />
               </label>
             </div>
           ))}

@@ -7,7 +7,7 @@ export default function CustomersAppliedTableEntry() {
         className="main__content__table__list__entry"
         style={{ minWidth: 200 }}
       >
-        Bilal John
+        Bilal
       </div>
       <div className="main__content__table__list__entry">
         <img
