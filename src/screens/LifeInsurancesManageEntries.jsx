@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function LifeInsurancesManageEntries({ heading }) {
@@ -11,100 +11,44 @@ export default function LifeInsurancesManageEntries({ heading }) {
       default: false,
     },
     {
-      name: "Ref",
+      name: "Name",
       default: false,
     },
     {
-      name: "Ref",
+      name: "is Featured",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Premium",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Room limit",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Accidental death",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Accidental disability",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Accidental hospitalization",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Coverage Amount",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Date of Birth",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Plan type",
       default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
     },
   ];
   return (

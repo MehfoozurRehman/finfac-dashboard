@@ -1,8 +1,46 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function LifeInsurancesTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Ref</div>
+      <div className="main__content__table__list__entry">Name</div>
+      <div className="main__content__table__list__entry">is Featured</div>
+      <div className="main__content__table__list__entry">Premium</div>
+      <div className="main__content__table__list__entry">Room limit</div>
+      <div className="main__content__table__list__entry">Accidental death</div>
+      <div className="main__content__table__list__entry">
+        Accidental disability
+      </div>
+      <div className="main__content__table__list__entry">
+        Accidental hospitalization
+      </div>
+      <div className="main__content__table__list__entry">Coverage Amount</div>
+      <div className="main__content__table__list__entry">Date of Birth</div>
+      <div className="main__content__table__list__entry">Plan type</div>
+    </div>
+  );
+}
 
 export default function LifeInsurances({ onDelete }) {
   const navigate = useNavigate();
@@ -81,164 +119,216 @@ export default function LifeInsurances({ onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="is Featured" />
+            <TableHeaderEntry title="Premium" />
+            <TableHeaderEntry title="Room limit" />
+            <TableHeaderEntry title="Accidental death" />
+            <TableHeaderEntry title="Accidental disability" />
+            <TableHeaderEntry title="Accidental hospitalization" />
+            <TableHeaderEntry title="Coverage Amount" />
+            <TableHeaderEntry title="Date of Birth" />
+            <TableHeaderEntry title="Plan type" />
           </div>
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
+            onEdit={() => {
+              navigate("/dashboard/life_insurances/edit");
+            }}
+            onDelete={onDelete}
+          />
+          <LifeInsurancesTableEntry
             onEdit={() => {
               navigate("/dashboard/life_insurances/edit");
             }}

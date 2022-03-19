@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import UploadImage from "../components/UploadImage";
 import Toggle from "react-toggle";
 import { useNavigate } from "react-router-dom";
 import Input from "../components/Input";
@@ -51,27 +50,89 @@ export default function LifeInsurancesForm({ heading, isEdit }) {
         }}
       >
         <div className="main__content__form">
-          <div className="main__content__form__col" style={{ width: "100%" }}>
-            <UploadImage label="Image" />
+          <div className="main__content__form__col">
             <label className="main__content__form__toggle">
               <span>Is Featured</span>
               <Toggle defaultChecked={false} icons={false} />
             </label>
           </div>
           <div className="main__content__form__col">
+            <Input error="" label="Ref" placeholder="Ref" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Name" placeholder="Name" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input error="" label="Premium" placeholder="Premium" type="text" />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Room limit"
+              placeholder="Room limit"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
             <Select
               error=""
               isMulti={false}
-              label="hello"
+              label="Accidental death"
               options={[
-                { value: "chocolate", label: "Chocolate" },
-                { value: "strawberry", label: "Strawberry" },
-                { value: "vanilla", label: "Vanilla" },
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
               ]}
             />
           </div>
           <div className="main__content__form__col">
-            <Input error="" label="hello" placeholder="hey" type="text" />
+            <Select
+              error=""
+              isMulti={false}
+              label="Accidental disability"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Accidental hospitalization"
+              options={[
+                { value: true, label: "Yes" },
+                { value: false, label: "No" },
+              ]}
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Coverage Amount"
+              placeholder="Coverage Amount"
+              type="text"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Input
+              error=""
+              label="Date of Birth"
+              placeholder="Date of Birth"
+              type="date"
+            />
+          </div>
+          <div className="main__content__form__col">
+            <Select
+              error=""
+              isMulti={false}
+              label="Plan type"
+              options={[
+                { value: "Individual Plan", label: "Individual Plan" },
+                { value: "Family Plan", label: "Family Plan" },
+                { value: "With Parent", label: "With Parent" },
+              ]}
+            />
           </div>
         </div>
       </div>
