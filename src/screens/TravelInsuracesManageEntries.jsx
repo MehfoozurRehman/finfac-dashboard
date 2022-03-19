@@ -1,109 +1,89 @@
 import React from "react";
 import { ArrowLeft } from "react-feather";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
 export default function TravelInsuracesManageEntries({ heading }) {
   const navigate = useNavigate();
   const listOfEntries = [
     {
-      name: "Ref",
+      name: "Premium",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Medical Cover",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Coverage upto",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Emergency medical cover",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Repatriation of mortal remains",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Emergency medical evacuation",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Emergency Dental care",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Emergency return home",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Deductible",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Accidental death / permanent disability",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Baggage loss",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Baggage delay",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Flight delay",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Trip cancellation",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Credit card loss",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Passport loss",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Country",
       default: false,
     },
     {
-      name: "Ref",
+      name: "Travel time",
       default: true,
     },
     {
-      name: "Ref",
+      name: "Passenger",
       default: true,
     },
     {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
-      default: true,
-    },
-    {
-      name: "Ref",
-      default: false,
-    },
-    {
-      name: "Ref",
+      name: "Date of Birth",
       default: false,
     },
   ];

@@ -1,8 +1,63 @@
 import React from "react";
 import { Search } from "react-feather";
 import { Link, useNavigate } from "react-router-dom";
-import LoanTableEntry from "../components/LoanTableEntry";
 import TableHeaderEntry from "../components/TableHeaderEntry";
+import { Edit, Trash } from "react-feather";
+
+function TravelInsuracesTableEntry({ onEdit, onDelete }) {
+  return (
+    <div className="main__content__table__list">
+      <div className="main__content__table__list__entry">
+        <button className="main__content__table__list__entry__button main__content__table__list__entry__button__primary">
+          <Edit
+            size={20}
+            color="currentColor"
+            strokeWidth={1}
+            onClick={onEdit}
+          />
+        </button>
+        <button
+          className="main__content__table__list__entry__button main__content__table__list__entry__button__secondary"
+          onClick={onDelete}
+        >
+          <Trash size={20} color="currentColor" strokeWidth={1} />
+        </button>
+      </div>
+      <div className="main__content__table__list__entry">Premium</div>
+      <div className="main__content__table__list__entry">Medical Cover</div>
+      <div className="main__content__table__list__entry">Coverage upto</div>
+      <div className="main__content__table__list__entry">
+        Emergency medical cover
+      </div>
+      <div className="main__content__table__list__entry">
+        Repatriation of mortal remains
+      </div>
+      <div className="main__content__table__list__entry">
+        Emergency medical evacuation
+      </div>
+      <div className="main__content__table__list__entry">
+        Emergency Dental care
+      </div>
+      <div className="main__content__table__list__entry">
+        Emergency return home
+      </div>
+      <div className="main__content__table__list__entry">Deductible</div>
+      <div className="main__content__table__list__entry">
+        Accidental death / permanent disability
+      </div>
+      <div className="main__content__table__list__entry">Baggage loss</div>
+      <div className="main__content__table__list__entry">Baggage delay</div>
+      <div className="main__content__table__list__entry">Flight delay</div>
+      <div className="main__content__table__list__entry">Trip cancellation</div>
+      <div className="main__content__table__list__entry">Credit card loss</div>
+      <div className="main__content__table__list__entry">Passport loss</div>
+      <div className="main__content__table__list__entry">Country</div>
+      <div className="main__content__table__list__entry">Travel time</div>
+      <div className="main__content__table__list__entry">Passenger</div>
+      <div className="main__content__table__list__entry">Date of Birth</div>
+    </div>
+  );
+}
 
 export default function TravelInsuraces({ onDelete }) {
   const navigate = useNavigate();
@@ -80,165 +135,166 @@ export default function TravelInsuraces({ onDelete }) {
         <div className="main__content__table">
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
-            <TableHeaderEntry title="Ref" />
+            <TableHeaderEntry title="Premium" />
+            <TableHeaderEntry title="Medical Cover" />
+            <TableHeaderEntry title="Coverage upto" />
+            <TableHeaderEntry title="Emergency medical cover" />
+            <TableHeaderEntry title="Repatriation of mortal remains" />
+            <TableHeaderEntry title="Emergency medical evacuation" />
+            <TableHeaderEntry title="Emergency Dental care" />
+            <TableHeaderEntry title="Emergency return home" />
+            <TableHeaderEntry title="Deductible" />
+            <TableHeaderEntry title="Accidental death / permanent disability" />
+            <TableHeaderEntry title="Baggage loss" />
+            <TableHeaderEntry title="Baggage delay" />
+            <TableHeaderEntry title="Flight delay" />
+            <TableHeaderEntry title="Trip cancellation" />
+            <TableHeaderEntry title="Credit card loss" />
+            <TableHeaderEntry title="Passport loss" />
+            <TableHeaderEntry title="Country" />
+            <TableHeaderEntry title="Travel time" />
+            <TableHeaderEntry title="Passenger" />
+            <TableHeaderEntry title="Date of Birth" />
           </div>
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
             onDelete={onDelete}
           />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/travel_insurances/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/travel_insurances/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
-            onEdit={() => {
-              navigate("/dashboard/travel_insurances/edit");
-            }}
-            onDelete={onDelete}
-          />
-          <LoanTableEntry
+          <TravelInsuracesTableEntry
             onEdit={() => {
               navigate("/dashboard/travel_insurances/edit");
             }}
