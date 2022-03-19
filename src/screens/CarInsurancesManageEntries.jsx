@@ -3,7 +3,7 @@ import { ArrowLeft } from "react-feather";
 import { useNavigate } from "react-router-dom";
 import Toggle from "react-toggle";
 
-export default function CarInsurancesManageEntries({ heading }) {
+export default function CarInsurancesManageEntries({}) {
   const navigate = useNavigate();
   const listOfEntries = [
     {

@@ -37,9 +37,12 @@ export default function DailyRates({ onAdd, onEdit, onDelete }) {
           <div className="main__content__table__header">
             <TableHeaderEntry title="Action" />
             <TableHeaderEntry title="Ref" />
-            <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Name" />
+            <TableHeaderEntry title="Image" />
             <TableHeaderEntry title="Is Featured" />
+            <TableHeaderEntry title="Change Rate" />
+            <TableHeaderEntry title="Value" />
+            <TableHeaderEntry title="Index" />
           </div>
           <DailyRatesTableEntry onEdit={onEdit} onDelete={onDelete} />
           <DailyRatesTableEntry onEdit={onEdit} onDelete={onDelete} />

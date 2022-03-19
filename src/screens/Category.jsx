@@ -11,9 +11,6 @@ export default function Category({ onAdd, onEdit, onDelete }) {
         <div className="main__header__top">
           <div className="main__header__top__heading">Category</div>
           <div className="main__header__top__buttons">
-            {/* <button className="main__header__top__buttons__button">
-              Bulk Add
-            </button> */}
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
