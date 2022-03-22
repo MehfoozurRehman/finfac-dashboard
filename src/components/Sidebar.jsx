@@ -826,6 +826,44 @@ export default function Sidebar({}) {
           ]}
         />
         <NavLink
+          to="/dashboard/cms"
+          title="CMS"
+          svg={
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22.791"
+              height="24"
+              viewBox="0 0 22.791 24"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="0.5"
+                  x2="0.5"
+                  y2="1"
+                  gradientUnits="objectBoundingBox"
+                >
+                  <stop offset="0" stopColor="#fff" />
+                  <stop offset="1" stopColor="#d2d2d2" />
+                </linearGradient>
+              </defs>
+              <g
+                id="Group_1939"
+                data-name="Group 1939"
+                transform="translate(-163.35 -506)"
+              >
+                <path
+                  id="Icon_open-person"
+                  data-name="Icon open-person"
+                  d="M11.4,0C8.262,0,5.7,3.36,5.7,7.5S8.262,15,11.4,15s5.7-3.36,5.7-7.5S14.529,0,11.4,0ZM5.441,15A5.877,5.877,0,0,0,0,21v3H22.791V21a5.857,5.857,0,0,0-5.441-6A7.852,7.852,0,0,1,11.4,18,7.852,7.852,0,0,1,5.441,15Z"
+                  transform="translate(163.35 506)"
+                  fill="url(#linear-gradient)"
+                />
+              </g>
+            </svg>
+          }
+        />
+        <NavLink
           to="/dashboard/customers"
           title="Customers"
           svg={

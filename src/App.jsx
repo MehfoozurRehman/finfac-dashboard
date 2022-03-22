@@ -59,6 +59,8 @@ import BlogsPopup from "./components/BlogsPopup";
 import KiborsPopup from "./components/KiborsPopup";
 import DailyRatesPopup from "./components/DailyRatesPopup";
 import BlogsForm from "./screens/BlogsForm";
+import CMS from "./screens/CMS";
+import CMSForm from "./screens/CMSForm";
 
 const Login = lazy(() => import("./screens/Login"));
 const Signup = lazy(() => import("./screens/Signup"));
@@ -502,6 +504,12 @@ export default function App() {
               path="manage_entries"
               element={<ManageEntries heading="Manage Entries" />}
             />
+            <Route
+              path="cms"
+              element={<CMS onDelete={setIsDeleteConfirmation} />}
+            />
+            <Route path="cms/add" element={<CMSForm heading="Add" />} />
+            <Route path="cms/edit" element={<CMSForm heading="Edit" />} />
             <Route path="customers" element={<Customers />} />
             <Route path="customers/applied" element={<CustomersApplied />} />
             <Route

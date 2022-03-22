@@ -26,7 +26,7 @@ export default function TestimonialsForm({ heading }) {
             <button
               className="main__header__top__buttons__button"
               onClick={() => {
-                navigate("/dashboard/blogs");
+                navigate("/dashboard/testimonials");
               }}
               style={{ background: "#242424" }}
             >

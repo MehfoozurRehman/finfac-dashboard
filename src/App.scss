@@ -794,6 +794,8 @@ body {
   margin-bottom: 0.5em;
   padding: 0.3em 1em;
   border-radius: 10px;
+  width: fit-content;
+  min-width: 100%;
 }
 .main__content__table__list__entry {
   flex: 1;
@@ -1210,7 +1212,7 @@ body {
   height: 15px;
 }
 .ck .ck-content {
-  height: 400px;
+  height: 200px;
   border: none !important;
   border-bottom-left-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
